@@ -431,6 +431,7 @@ button{
     font-size: 400%;
     margin-top: 5%;
     position: fixed;
+    text-wrap: nowrap;
 }
 #projectsTitle{
     color: rgba(94, 94, 94, 1);
