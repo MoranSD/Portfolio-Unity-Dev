@@ -340,41 +340,33 @@ button{
     background-color: rgba(94, 94, 94, 1);
     overflow: auto;
     height: 100%;
-    width: 80%;
+    width: 100%;
     overflow-x: hidden;
-    padding-right: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
 }
 #aboutMeMobile{
     margin-top: 5%;
 }
 
 #aboutMeMobilePhoto{
-    height: 100%;
-    aspect-ratio: 1/1;
+    width: 40%;
+    height: auto;
 }
 #aboutMeMobileTitle{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 30%;
 }
 #aboutMeMobileTitleText{
     display: flex;
     flex-direction: column;
     margin-left: 2%;
-    margin-top: 5%;
     text-wrap: nowrap;
-    font-size: 500%;
+    font-size: 400%;
+    margin-top: 10%;
 }
 #aboutMeMobileName{
-    flex-grow: 1;
+    flex-grow: 0.3;
     font-size: 150%;
-    display: flex;
-    align-items: center;
 }
 #aboutMeMobileProfession{
     font-size: 120%;
