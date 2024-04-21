@@ -1,0 +1,572 @@
+html {
+	height: 100%;
+    font-size: 0.8vw;
+    font-family: Montserrat_medium;
+    overflow: hidden;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+    -webkit-tap-highlight-color: transparent;
+}
+.orange_text{
+    color: rgb(222, 118, 76);
+}
+.white_text{
+    color: rgba(225, 225, 225, 1);
+}
+.bold_font{
+    font-family: Montserrat_bold;
+}
+.about_info_spacing{
+    margin-bottom: 1vw;
+}
+.main_block{
+    width: 70%;
+    aspect-ratio: 16/9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    display: none;
+}
+.left_block{
+    background-color: rgba(225, 225, 225, 1);
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right_block{
+    background-color: rgba(94, 94, 94, 1);
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    height: 20%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-button{
+    width: 100%;
+    height: 40%;
+}
+.about-my_projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+.about-my_projects-title{
+    flex-shrink: 0;
+    flex-grow: 0.2;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(94, 94, 94, 1);
+}
+.about-my_projects-line{
+    background-color: rgba(94, 94, 94, 1);
+    flex-shrink: 0;
+    flex-grow: 2;
+    height: 0.2vw;
+}
+.my_projects{
+    height: 70%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+}
+.my_projects-buttons{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+button{
+    padding: 0;
+    background-color: unset;
+    border-radius: 0.35vw;
+    font-size: 2.3rem;
+    font-family: Montserrat_medium;
+
+    border: 0.2vw solid rgba(94, 94, 94, 1);
+    color: rgba(94, 94, 94, 1);
+    cursor: pointer;
+}
+.my_projects-buttons::-webkit-scrollbar{
+    width: 1vw;
+}
+.my_projects-buttons::-webkit-scrollbar-track{
+    background-color: rgba(94, 94, 94, 1);
+    border-radius: 100vw;
+}
+.my_projects-buttons::-webkit-scrollbar-thumb{
+    background: rgba(225, 225, 225, 1);
+    border: 1px solid rgba(94, 94, 94, 1);
+    border-radius: 100vw;
+}
+.my_projects-buttons-button{
+    width: 95%;
+    margin-bottom: 1vw;
+}
+.my_projects-buttons-button:active{
+    background-color: gray;
+}
+.about_info{
+    height: 90%;
+    width: 80%;
+    padding-right: 5%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    
+}
+.about_info .active{
+    animation: fade-out 1s ease-out reverse both;
+}
+.about_info::-webkit-scrollbar{
+    width: 1vw;
+}
+.about_info::-webkit-scrollbar-track{
+    background-color: rgba(225, 225, 225, 1);
+    border-radius: 100vw;
+}
+.about_info::-webkit-scrollbar-thumb{
+    background: rgba(94, 94, 94, 1);
+    border: 1px solid rgba(225, 225, 225, 1);
+    border-radius: 100vw;
+}
+.about_info-main{
+    width: 100%;
+    height: 9vw;
+    display: flex;
+    flex-direction: row;
+}
+.about_info-photo{
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.about_info-text_info{
+    flex-grow: 1;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.about_info-main-name{
+    /* flex-grow: 1; */
+    font-size: 2.3rem;
+    display: flex;
+    align-items: center;
+}
+.about_info-main-profession{
+    font-size: 1.5rem;
+}
+.about_info-main-employment{
+    flex-grow: 1;
+    font-size: 1rem;
+    text-align: start;
+}
+.about_info-about_text{
+    width: 100%;
+    font-size: 1.2rem;
+}
+.about_info-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.about_info-link{
+    display: flex;
+    flex-direction: row;
+}
+.about_info-link_title{
+    font-size: 1rem;
+    margin-right: 0.25vw;
+}
+.about_info-link a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+.work_expierence-title{
+    font-size: 1.2rem;
+}
+.skills-title{
+    font-size: 1.2rem;
+}
+.work_expierence-studios{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.skills-concrete{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.project_info{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    display: none;
+}
+.project_info .active{
+    animation: light-up 1s ease-out both;
+}
+.project_info-video_block{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: cadetblue;
+}
+.project_info-name{
+    font-size: 1.5rem;
+}
+.project_info-links{
+    font-size: 1rem;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.project_info-description{
+    font-size: 1rem;
+    align-self: flex-start;
+}
+
+#projectVideo{
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+#mobileBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* высота блока */
+    width: 100vw;
+}
+#navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 300%;
+    background-color: rgba(225, 225, 225, 1);
+    color: #5E5E5E;
+}
+#navBarTitle{
+    margin-left: 5%;
+}
+
+.burger {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    margin: auto 5% auto 0;
+    border: none;
+    cursor: pointer;
+}
+
+.burger__line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: rgba(94, 94, 94, 1);
+    position: absolute;
+    left: 0;
+    transition: .3s all linear;
+}
+
+.burger__line_first {
+    top: 0;
+}
+
+.burger__line_second,
+.burger__line_third {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger__line_fourth {
+    bottom: 0;
+}
+
+.burger_active .burger__line_first,
+.burger_active .burger__line_fourth {
+    opacity: 0;
+}
+
+.burger_active .burger__line_second {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.burger_active .burger__line_third {
+    transform: translateY(-50%) rotate(-45deg);
+}
+  
+#aboutMePage{
+    background-color: rgba(94, 94, 94, 1);
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+#aboutMeMobile{
+    margin-top: 5%;
+}
+
+#aboutMeMobilePhoto{
+    max-width: 30%;
+    max-height: auto;
+}
+#aboutMeMobileTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#aboutMeMobileTitleText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: 5%;
+    text-wrap: nowrap;
+    font-size: 500%;
+}
+#aboutMeMobileDesciption{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 5%;
+    margin-top: 5%;
+    justify-content: center;
+    color: rgba(225, 225, 225, 1);
+    font-size: 600%;
+}
+#aboutMeMobileDesciptionLinks a{
+    font-size: 70%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.aboutMeMobileDesciptionLinksText{
+    font-size: 100%;
+}
+
+#workExpirience{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#workExpirienceTitle{
+    font-size: 150%;
+}
+
+.infoSkillsTitle{
+    font-size: 150%;
+}
+
+#projectsPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(225, 225, 225, 1);
+}
+#myProjects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 400%;
+    margin-top: 5%;
+    position: fixed;
+}
+#projectsTitle{
+    color: rgba(94, 94, 94, 1);
+    text-wrap: nowrap;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 150%;
+}
+.projectsLine{
+    background-color: rgba(94, 94, 94, 1);
+    flex-shrink: 0;
+    flex-grow: 2;
+    height: 0.23vh;
+    width: 40vw;
+    margin-top: 2%;
+}
+#projectsButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.scrollableBlock{
+    overflow: auto;
+    height: 60%;
+    width: 100%;
+    overflow-x: hidden;
+    margin-top: 15%;
+}
+
+#projectInfoBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(94, 94, 94, 1);
+    display: none;
+}
+
+#projectInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
+#mobileProjectVideo{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: cadetblue;
+    margin-left: 5%;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+#projectInfoTitle{
+    font-size: 550%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#projectInfoLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 400%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#projectInfoDescription{
+    font-size: 400%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#selectMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(225, 225, 225, 1);
+    display: none;
+}
+.selectButtons{
+    border: none;
+    color: rgba(94, 94, 94, 1);
+    font-size: 800%;
+    margin-top: 5%;
+}
+#selectMenuAboutMeButton
+{
+    width: 80%;
+    border: 1px solid rgba(94, 94, 94, 1);
+    border-radius: 6px;
+    margin: 0 auto;
+    font-size: 600%;
+    margin-top: 5%;
+    user-select: none;
+}
+
+.scrollableBlock::-webkit-scrollbar{
+    width: 1vw;
+}
+.scrollableBlock::-webkit-scrollbar-track{
+    background-color: rgba(225, 225, 225, 1);
+    border-radius: 100vw;
+}
+.scrollableBlock::-webkit-scrollbar-thumb{
+    background: rgba(94, 94, 94, 1);
+    border: 1px solid rgba(225, 225, 225, 1);
+    border-radius: 100vw;
+}
+
+#mobileProjectsButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -3%;
+}
+
+@keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+@keyframes light-up {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #desktop{
+        display: flex;
+    }
+    #mobileBlock{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    #mobileBlock{
+        display: flex;
+    }
+    #desktop{
+        display: none;
+    }
+}

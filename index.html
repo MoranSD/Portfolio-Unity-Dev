@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Leonid Kurskov portfolio Unity developer</title>
+    <style>
+        @font-face {
+         font-family: Montserrat_medium;
+         src: url(Fonts/Montserrat/Montserrat-Medium.ttf);
+        }
+        @font-face {
+         font-family: Montserrat_bold;
+         src: url(Fonts/Montserrat/Montserrat-SemiBold.ttf);
+        }
+       </style>
+</head>
+<body>
+    <div class="main_block" id="desktop">
+        <div class="left_block">
+            <div class="about">
+                <button class="about-button" id="about-button">Обо мне</button>
+                <div class="about-my_projects">
+                    <div class="about-my_projects-line"></div>
+                    <div class="about-my_projects-title bold_font">Мои проекты</div>
+                    <div class="about-my_projects-line"></div>
+                </div>
+            </div>
+            <div class="my_projects">
+                <div class="my_projects-buttons" id="projectsButtons">
+                </div>
+            </div>
+        </div>
+        <div class="right_block">
+            <div class="about_info">
+                <div class="about_info-main about_info_spacing">
+                    <img class="about_info-photo" src="Images/photo.png" alt="">
+                    <div class="about_info-text_info">
+                        <div class="about_info-main-name bold_font white_text">Курсков Леонид</div>
+                        <div class="about_info-main-profession bold_font orange_text">Unity developer</div>
+                        <div class="about_info-main-employment white_text">полная занятость/фриланс</div>
+                    </div>
+                </div>
+                <div class="about_info-about_text about_info_spacing white_text">
+                    Последние <span class="orange_text">1.4</span> года занимаюсь разработкой игр в роли  программиста. Разрабатывал <span class="orange_text">Hyper-Casual</span>, <span class="orange_text">Hybdrid-Casual</span> и <span class="orange_text">Casual</span> игры.
+                </div>
+                <div class="about_info-links about_info_spacing">
+                    <div class="about_info-link">
+                        <div class="about_info-link_title orange_text">Телеграмм -</div>
+                        <a class="white_text" href="https://t.me/msdGameDev">https://t.me/msdGameDev</a>
+                    </div>
+                    <div class="about_info-link">
+                        <div class="about_info-link_title orange_text">Блог -</div>
+                        <a class="white_text" href="https://t.me/msdBlog">https://t.me/msdBlog</a>
+                    </div>
+                    <div class="about_info-link">
+                        <div class="about_info-link_title orange_text">Почта -</div>
+                        <a class="white_text" href="leonidkurskov@gmail.com">leonidkurskov@gmail.com</a>
+                    </div>
+                    <div class="about_info-link">
+                        <div class="about_info-link_title orange_text">GitHub -</div>
+                        <a class="white_text" href="https://github.com/MoranSD">https://github.com/MoranSD</a>
+                    </div>
+                </div>
+                <div class="about_info-work_expierence about_info_spacing orange_text">
+                    <div class="work_expierence-title bold_font about_info_spacing">Опыт работы</div>
+                    <ul class="work_expierence-studios about_info_spacing white_text">
+                        <li>GGCraft</li>
+                        <li>Hypex Games</li>
+                        <li>DVD Project Blue</li>
+                        <li>Kids Games</li>
+                        <li>фриланс</li>
+                    </ul>
+                    <div class="work_expierence-concrete about_info_spacing white_text">Разработка для мобильных платформ (Android). Проектирование, игровая логика, верстка UI (Canvas/UIToolkit), внедрение SDK,
+                        оптимизация, игровой ИИ, физика, анимации, эффекты (particle system/trail renderer).</div>
+                </div>
+                <div class="about_info-skills">
+                    <div class="skills-title bold_font about_info_spacing orange_text">Ключевые навыки</div>
+                    <ul class="skills-concrete about_info_spacing white_text">
+                        <li>Unity</li>
+                        <li>C#, SOLID, ООП, Clean Architecture</li>
+                        <li>DOTween, Zenject, UI Toolkit, UniTask</li>
+                        <li>SDK: AppMetrica, AppsFlyer, Facebook, ЯндексИгры</li>
+                    </ul>
+                </div>
+                <div class="about_info-skills">
+                    <div class="skills-title bold_font about_info_spacing orange_text">Дополнительные навыки</div>
+                    <ul class="skills-concrete about_info_spacing white_text">
+                        <li>Blender, Photoshop</li>
+                        <li>Notion, Miro, Yougile</li>
+                        <li>Взлом вк страничек</li>
+                        <li>Ремонт микроволновок</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project_info">
+                <div class="project_info-video_block about_info_spacing" id="projectVideo">
+                
+                </div>
+                <div class="project_info-name bold_font white_text about_info_spacing" id="projectName">Название проекта</div>
+                <div class="project_info-links white_text about_info_spacing" id="projectLinks">Полезные ссылки</div>
+                <div class="project_info-description white_text" id="projectDescription">Описание проекта, Описание проекта, Описание проекта, Описание проекта, Описание проекта, Описание проекта, Описание проекта, Описание проекта, Описание проекта, Описание проекта, </div>
+            </div>
+        </div>
+    </div>
+    <div id="mobileBlock">
+        <nav id="navBar">
+            <h1 id="navBarTitle">Название выбранной вкладки</h1>
+            <!-- <button id="burgerButton">
+                <div class="burgerButtonRectangle"></div>
+                <div class="burgerButtonRectangle"></div>
+                <div class="burgerButtonRectangle"></div>
+            </button> -->
+            <button class="burger" id="burgerButton">
+                <span class="burger__line burger__line_first"></span>
+                <span class="burger__line burger__line_second"></span>
+                <span class="burger__line burger__line_third"></span>
+                <span class="burger__line burger__line_fourth"></span>
+            </button>
+        </nav>
+        <div id="aboutMePage">
+            <div id="aboutMeMobile">
+                <div id="aboutMeMobileTitle">
+                    <img id="aboutMeMobilePhoto" src="Images/photo.png" alt="">
+                    <div id="aboutMeMobileTitleText">
+                        <div class="bold_font white_text">Курсков Леонид</div>
+                        <div class="bold_font orange_text">Unity developer</div>
+                        <div class="white_text">полная занятость/фриланс</div>
+                    </div>
+                </div>
+                <div id="aboutMeMobileDesciption">
+                    <div>
+                        Последние <span class="orange_text">1.4</span> года занимаюсь<br>
+                        разработкой игр в роли  программиста.<br>
+                        Разрабатывал <span class="orange_text">Hyper-Casual</span>,<br>
+                        <span class="orange_text">Hybdrid-Casual</span> и <span class="orange_text">Casual</span> игры.
+                    </div>
+                    <div class="about_info-links about_info_spacing" id="aboutMeMobileDesciptionLinks">
+                        <div class="about_info-link">
+                            <div class="aboutMeMobileDesciptionLinksText orange_text">Телеграмм -</div>
+                            <a class="white_text" href="https://t.me/msdGameDev">https://t.me/msdGameDev</a>
+                        </div>
+                        <div class="about_info-link">
+                            <div class="aboutMeMobileDesciptionLinksText orange_text">Блог -</div>
+                            <a class="white_text" href="https://t.me/msdBlog">https://t.me/msdBlog</a>
+                        </div>
+                        <div class="about_info-link">
+                            <div class="aboutMeMobileDesciptionLinksText orange_text">Почта -</div>
+                            <a class="white_text" href="leonidkurskov@gmail.com">leonidkurskov@gmail.com</a>
+                        </div>
+                        <div class="about_info-link">
+                            <div class="aboutMeMobileDesciptionLinksText orange_text">GitHub -</div>
+                            <a class="white_text" href="https://github.com/MoranSD">https://github.com/MoranSD</a>
+                        </div>
+                    </div>
+                    <div class="about_info-work_expierence about_info_spacing orange_text" id="workExpirience">
+                        <div class="bold_font about_info_spacing" id="workExpirienceTitle">Опыт работы</div>
+                        <ul class="work_expierence-studios about_info_spacing white_text">
+                            <li>GGCraft</li>
+                            <li>Hypex Games</li>
+                            <li>DVD Project Blue</li>
+                            <li>Kids Games</li>
+                            <li>фриланс</li>
+                        </ul>
+                        <div class="work_expierence-concrete about_info_spacing white_text">Разработка для мобильных платформ (Android). Проектирование, игровая логика, верстка UI (Canvas/UIToolkit), внедрение SDK,
+                            оптимизация, игровой ИИ, физика, анимации, эффекты (particle system/trail renderer).</div>
+                    </div>
+                    <div class="about_info-skills">
+                        <div class="infoSkillsTitle bold_font about_info_spacing orange_text">Ключевые навыки</div>
+                        <ul class="skills-concrete about_info_spacing white_text">
+                            <li>Unity</li>
+                            <li>C#, SOLID, ООП, Clean Architecture</li>
+                            <li>DOTween, Zenject, UI Toolkit, UniTask</li>
+                            <li>SDK: AppMetrica, AppsFlyer, Facebook, ЯндексИгры</li>
+                        </ul>
+                    </div>
+                    <div class="about_info-skills">
+                        <div class="infoSkillsTitle bold_font about_info_spacing orange_text">Доп навыки</div>
+                        <ul class="skills-concrete about_info_spacing white_text">
+                            <li>Blender, Photoshop</li>
+                            <li>Notion, Miro, Yougile</li>
+                            <li>Взлом вк страничек</li>
+                            <li>Ремонт микроволновок</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projectInfoBlock">
+            <div class="scrollableBlock">
+                <div id="projectInfo">
+                    <div id="mobileProjectVideo">
+
+                    </div>
+                    <div class="bold_font white_text about_info_spacing" id="projectInfoTitle">Название проекта</div>
+                    <div class="white_text about_info_spacing" id="projectInfoLinks">Полезные ссылки</div>
+                    <div class=" white_text" id="projectInfoDescription">Описание проекта</div>
+                </div>
+            </div>
+        </div>
+        <div id="selectMenu">
+            <button id="selectMenuAboutMeButton">
+                Обо мне
+            </button>
+            <div id="projectsPage">
+                <div id="myProjects">
+                    <div class="projectsLine"></div>
+                    <div id="projectsTitle">Мои проекты</div>
+                    <div class="projectsLine"></div>
+                </div>
+                <div class="scrollableBlock">
+                    <div id="mobileProjectsButtons">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Scripts/Buttons.js"></script>
+<script src="Scripts/MobileButtons.js"></script>
+</html>
