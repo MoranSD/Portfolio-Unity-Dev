@@ -13,10 +13,7 @@ body {
   justify-content: center;
 }
 button {
-    outline: none;
     -webkit-tap-highlight-color: transparent;
-    -moz-appearance: none;
-    appearance: none;
 }
 .orange_text{
     color: rgb(222, 118, 76);
