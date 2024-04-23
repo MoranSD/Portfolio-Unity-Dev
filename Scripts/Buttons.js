@@ -17,60 +17,6 @@ const projectsArray = [
     videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
     description: 'подписывайтесь на мой онлифанс'
   },
-  {
-    name: 'надувает 300 шариков челлендж',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
-  },
-  {
-    name: 'надувает 300',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
-  },
-  {
-    name: 'надувает 300',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
-  },
-  {
-    name: 'надувает 300 шариков челлендж',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
-  },
-  {
-    name: 'надувает 300',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
-  },
-  {
-    name: 'надувает 300',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
-  },
-  {
-    name: 'надувает 300 шариков челлендж',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
-  },
-  {
-    name: 'надувает 300',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
-  },
-  {
-    name: 'надувает 300',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
-  },
 ]
 
 if(document.getElementById('mobileBlock').style.display == 'none' || document.getElementById('mobileBlock').style.display == ''){
