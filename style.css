@@ -238,24 +238,10 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    overflow-x: hidden;
-    overflow-y: auto;
     display: none;
 }
 .project_info .active{
     animation: fade-out 1s ease-out reverse both;
-}
-.project_info::-webkit-scrollbar{
-    width: 1vw;
-}
-.project_info::-webkit-scrollbar-track{
-    background-color: rgba(225, 225, 225, 1);
-    border-radius: 100vw;
-}
-.project_info::-webkit-scrollbar-thumb{
-    background: rgba(94, 94, 94, 1);
-    border: 1px solid rgba(225, 225, 225, 1);
-    border-radius: 100vw;
 }
 .project_info .active{
     animation: light-up 1s ease-out both;
