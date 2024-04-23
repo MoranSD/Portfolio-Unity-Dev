@@ -13,7 +13,10 @@ body {
   justify-content: center;
 }
 button {
+    outline: none;
     -webkit-tap-highlight-color: transparent;
+    -moz-appearance: none;
+    appearance: none;
 }
 .orange_text{
     color: rgb(222, 118, 76);
@@ -132,9 +135,6 @@ button{
 .my_projects-buttons-button{
     width: 95%;
     margin-bottom: 1vw;
-}
-.my_projects-buttons-button:active{
-    background-color: gray;
 }
 .about_info{
     height: 90%;

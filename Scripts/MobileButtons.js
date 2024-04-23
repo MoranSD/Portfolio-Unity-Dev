@@ -1,4 +1,3 @@
-console.log(document.getElementById('mobileBlock').style.display != 'none');
 if(document.getElementById('mobileBlock').style.display != 'none'){
     
     const projectsArray = [
