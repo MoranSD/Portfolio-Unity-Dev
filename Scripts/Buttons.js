@@ -17,6 +17,60 @@ const projectsArray = [
     videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
     description: 'подписывайтесь на мой онлифанс'
   },
+  {
+    name: 'надувает 300 шариков челлендж',
+    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
+    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
+    description: 'подписывайтесь на мой онлифанс'
+  },
+  {
+    name: 'надувает 300',
+    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
+    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
+    description: 'подписывайтесь на мой онлифанс'
+  },
+  {
+    name: 'надувает 300',
+    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
+    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
+    description: 'подписывайтесь на мой онлифанс'
+  },
+  {
+    name: 'надувает 300 шариков челлендж',
+    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
+    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
+    description: 'подписывайтесь на мой онлифанс'
+  },
+  {
+    name: 'надувает 300',
+    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
+    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
+    description: 'подписывайтесь на мой онлифанс'
+  },
+  {
+    name: 'надувает 300',
+    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
+    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
+    description: 'подписывайтесь на мой онлифанс'
+  },
+  {
+    name: 'надувает 300 шариков челлендж',
+    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
+    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
+    description: 'подписывайтесь на мой онлифанс'
+  },
+  {
+    name: 'надувает 300',
+    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
+    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
+    description: 'подписывайтесь на мой онлифанс'
+  },
+  {
+    name: 'надувает 300',
+    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
+    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
+    description: 'подписывайтесь на мой онлифанс'
+  },
 ]
 
 if(document.getElementById('mobileBlock').style.display == 'none' || document.getElementById('mobileBlock').style.display == ''){
@@ -37,6 +91,9 @@ if(document.getElementById('mobileBlock').style.display == 'none' || document.ge
   const buttons = document.querySelectorAll('button');
 
   const projectButtons = Array.from(document.getElementsByClassName('my_projects-buttons-button'));
+
+  aboutMeButton.style.borderColor = 'rgba(94, 94, 94, 0.5)';
+  aboutMeButton.style.color = 'rgba(94, 94, 94, 0.5)'
 
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
@@ -106,12 +163,13 @@ if(document.getElementById('mobileBlock').style.display == 'none' || document.ge
   function createProjectsButtons(){
     projectsArray.map(function (project){
       const button = document.createElement('button');
-      button.style.width = '95%';
+      button.style.width = '100%';
       button.style.marginBottom = '1vw';
+      button.style.padding = '2%'
       button.className = 'my_projects-buttons-button';
       button.style.textTransform = 'uppercase';
       button.style.textWrap = 'nowrap';
-      button.style.fontSize = '160%';
+      button.style.fontSize = '150%';
       button.textContent = project.name;
       projectsButtons.appendChild(button);
     })
