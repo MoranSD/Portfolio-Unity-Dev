@@ -1,11 +1,5 @@
 const projectsArray = [
   {
-    name: 'надувает 300 шариков челлендж',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
-  },
-  {
     name: 'Dialogue system',
     videoLink: 'https://youtu.be/C_JBbQFcKiA',
     description: 'Заказ на создание системы диалогов с редактором основанным на нодах. Для создания редактора использовал GraphView.'
