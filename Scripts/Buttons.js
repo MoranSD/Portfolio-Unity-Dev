@@ -51,7 +51,7 @@ const projectsArray = [
   },
   {
     name: 'Fat Jump',
-    videoLink: 'https://www.youtube.com/shorts/UwzvTpLJN9A',
+    videoLink: '<https://www.youtube.com/embed/UwzvTpLJN9A',
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
   },
   {
