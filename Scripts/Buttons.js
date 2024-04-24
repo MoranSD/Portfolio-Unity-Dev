@@ -1,12 +1,12 @@
 const projectsArray = [
   {
     name: 'Dialogue system',
-    videoLink: 'https://youtu.be/C_JBbQFcKiA',
+    videoLink: 'https://www.youtube.com/watch?v=C_JBbQFcKiA',
     description: 'Заказ на создание системы диалогов с редактором основанным на нодах. Для создания редактора использовал GraphView.'
   },
   {
     name: 'Sand Box The Game',
-    videoLink: 'https://youtu.be/juzhNcXmiNM',
+    videoLink: 'https://www.youtube.com/watch?v=juzhNcXmiNM',
     description: 'Заказ. Брал на себя роль ПМ и программиста. Разрабатывал с командой на заказ игру. Проект строился вокруг готового ассета, нашей задачей было добавить миссии, предметы, строительство, прогрессию.'
   },
   {
