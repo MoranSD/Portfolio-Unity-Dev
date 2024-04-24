@@ -6,16 +6,69 @@ const projectsArray = [
     description: 'подписывайтесь на мой онлифанс'
   },
   {
-    name: 'надувает 300',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
+    name: 'Dialogue system',
+    videoLink: 'https://youtu.be/C_JBbQFcKiA',
+    description: 'Заказ на создание системы диалогов с редактором основанным на нодах. Для создания редактора использовал GraphView.'
   },
   {
-    name: 'надувает 300',
-    links: ['http://127.0.0.1:5500/', 'http://127.0.0.1:55000/'],
-    videoLink: 'https://www.youtube.com/embed/ANJaK5KPzn4?si=9HKxaq3eHy3tMA2C',
-    description: 'подписывайтесь на мой онлифанс'
+    name: 'Sand Box The Game',
+    videoLink: 'https://youtu.be/juzhNcXmiNM',
+    description: 'Заказ. Брал на себя роль ПМ и программиста. Разрабатывал с командой на заказ игру. Проект строился вокруг готового ассета, нашей задачей было добавить миссии, предметы, строительство, прогрессию.'
+  },
+  {
+    name: 'Brick Battles',
+    videoLink: 'https://youtu.be/2LQpmJtqwgI',
+    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
+  },
+  {
+    name: 'Climb Race',
+    videoLink: 'https://youtu.be/qpqYZ4Bq6OI',
+    description: 'Заказ, исполнял обязанности программиста, дизайнил/верстал UI, занимался внедрением Facebook SDK, AppsFlyer SDK, настраивал анимации/эффекты.'
+  },
+  {
+    name: 'Pizza sort idle puzzle',
+    videoLink: 'https://youtu.be/woUFWxxfgfQ',
+    description: 'Пет проект, смешивающий 2 механики: "Idle" и "Merge sort". При создании проекта брал на себя все аспекты разработки.'
+  },
+  {
+    name: 'Royal Armies',
+    videoLink: 'https://youtu.be/7T1jF4TgQtw',
+    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
+  },
+  {
+    name: 'Clean Master',
+    videoLink: 'https://youtu.be/hPCO2y-liII',
+    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
+  },
+  {
+    name: 'Fly Delivery',
+    videoLink: 'https://youtu.be/L8kiIHOsKHk',
+    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
+  },
+  {
+    name: 'Sword Play',
+    videoLink: 'https://youtu.be/PeG9oAum0ZE',
+    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация, работа с ассетом "Dynamic mesh cutter".'
+  },
+  {
+    name: 'Dino Merge',
+    videoLink: 'https://youtu.be/HPVIqW95MAk',
+    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
+  },
+  {
+    name: 'Fat Jump',
+    videoLink: 'https://www.youtube.com/shorts/UwzvTpLJN9A',
+    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
+  },
+  {
+    name: 'Pandulum',
+    videoLink: 'https://youtu.be/p9YzaQOYn98',
+    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
+  },
+  {
+    name: 'Pink VS Black',
+    videoLink: 'https://youtu.be/BlNKCkVOejw',
+    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
   },
 ]
 
