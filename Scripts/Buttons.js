@@ -1,7 +1,7 @@
 const projectsArray = [
   {
     name: 'Dialogue system',
-    videoLink: 'https://www.youtube.com/watch?v=C_JBbQFcKiA',
+    videoLink: 'https://www.youtube.com/embed/C_JBbQFcKiA?si=O2erRZ0M5ODEBUVf',
     description: 'Заказ на создание системы диалогов с редактором основанным на нодах. Для создания редактора использовал GraphView.'
   },
   {
