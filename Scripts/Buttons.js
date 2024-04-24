@@ -6,47 +6,47 @@ const projectsArray = [
   },
   {
     name: 'Sand Box The Game',
-    videoLink: 'https://www.youtube.com/watch?v=juzhNcXmiNM',
+    videoLink: 'https://www.youtube.com/embed/juzhNcXmiNM?si=PCUfIvWyGa7RuhxY',
     description: 'Заказ. Брал на себя роль ПМ и программиста. Разрабатывал с командой на заказ игру. Проект строился вокруг готового ассета, нашей задачей было добавить миссии, предметы, строительство, прогрессию.'
   },
   {
     name: 'Brick Battles',
-    videoLink: 'https://youtu.be/2LQpmJtqwgI',
+    videoLink: 'https://www.youtube.com/embed/2LQpmJtqwgI?si=yUk-RJktjstb0QAP',
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
   },
   {
     name: 'Climb Race',
-    videoLink: 'https://youtu.be/qpqYZ4Bq6OI',
+    videoLink: 'https://www.youtube.com/embed/qpqYZ4Bq6OI?si=MAQEXdOJxlqBLLFM',
     description: 'Заказ, исполнял обязанности программиста, дизайнил/верстал UI, занимался внедрением Facebook SDK, AppsFlyer SDK, настраивал анимации/эффекты.'
   },
   {
     name: 'Pizza sort idle puzzle',
-    videoLink: 'https://youtu.be/woUFWxxfgfQ',
+    videoLink: 'https://www.youtube.com/embed/woUFWxxfgfQ?si=M4zoVmjsh5Q_2TRp',
     description: 'Пет проект, смешивающий 2 механики: "Idle" и "Merge sort". При создании проекта брал на себя все аспекты разработки.'
   },
   {
     name: 'Royal Armies',
-    videoLink: 'https://youtu.be/7T1jF4TgQtw',
+    videoLink: 'https://www.youtube.com/embed/7T1jF4TgQtw?si=DeHqyTScCfLxa-__',
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
   },
   {
     name: 'Clean Master',
-    videoLink: 'https://youtu.be/hPCO2y-liII',
+    videoLink: 'https://www.youtube.com/embed/hPCO2y-liII?si=eCJ08erUW8hKJEvj',
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
   },
   {
     name: 'Fly Delivery',
-    videoLink: 'https://youtu.be/L8kiIHOsKHk',
+    videoLink: 'https://www.youtube.com/embed/L8kiIHOsKHk?si=MD0DbqLm_Y_11Vh8',
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
   },
   {
     name: 'Sword Play',
-    videoLink: 'https://youtu.be/PeG9oAum0ZE',
+    videoLink: 'https://www.youtube.com/embed/PeG9oAum0ZE?si=HXr7bbp7Bd60VkZl',
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация, работа с ассетом "Dynamic mesh cutter".'
   },
   {
     name: 'Dino Merge',
-    videoLink: 'https://youtu.be/HPVIqW95MAk',
+    videoLink: 'https://www.youtube.com/embed/HPVIqW95MAk?si=5jqIMN8n_ru9W283',
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
   },
   {
@@ -56,12 +56,12 @@ const projectsArray = [
   },
   {
     name: 'Pandulum',
-    videoLink: 'https://youtu.be/p9YzaQOYn98',
+    videoLink: 'https://www.youtube.com/embed/p9YzaQOYn98?si=kmAdQqwBOtnDS7Lg',
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
   },
   {
     name: 'Pink VS Black',
-    videoLink: 'https://youtu.be/BlNKCkVOejw',
+    videoLink: 'https://www.youtube.com/embed/BlNKCkVOejw?si=s6HF-3TX4nXgww03',
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
   },
 ]
