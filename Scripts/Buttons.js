@@ -50,11 +50,6 @@ const projectsArray = [
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
   },
   {
-    name: 'Fat Jump',
-    videoLink: '<https://www.youtube.com/embed/UwzvTpLJN9A',
-    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
-  },
-  {
     name: 'Pandulum',
     videoLink: 'https://www.youtube.com/embed/p9YzaQOYn98?si=kmAdQqwBOtnDS7Lg',
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
@@ -65,6 +60,14 @@ const projectsArray = [
     description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
   },
 ]
+
+/*
+  {
+    name: 'Fat Jump',
+    videoLink: '<https://www.youtube.com/embed/UwzvTpLJN9A',
+    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
+  },
+*/
 
 if(document.getElementById('mobileBlock').style.display == 'none' || document.getElementById('mobileBlock').style.display == ''){
   
