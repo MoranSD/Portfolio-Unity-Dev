@@ -1,65 +1,46 @@
 const projectsArray = [
   {
-    name: 'Dialogue system',
-    videoLink: 'https://www.youtube.com/embed/C_JBbQFcKiA?si=O2erRZ0M5ODEBUVf',
-    description: 'Заказ на создание системы диалогов с редактором основанным на нодах. Для создания редактора использовал GraphView.'
+    "name": "Sand Box The Game",
+    "videoLink": "https://www.youtube.com/embed/juzhNcXmiNM?si=PCUfIvWyGa7RuhxY",
+    "description": "Коммерческий проект. Исполнял роль технического директора и ведущего программиста. Разработал систему миссий, механику строительства и прогрессии игрока, интегрировав их с существующим готовым ассетом. Реализовал полный цикл геймплея от создания контента до оптимизации."
   },
   {
-    name: 'Sand Box The Game',
-    videoLink: 'https://www.youtube.com/embed/juzhNcXmiNM?si=PCUfIvWyGa7RuhxY',
-    description: 'Заказ. Брал на себя роль ПМ и программиста. Разрабатывал с командой на заказ игру. Проект строился вокруг готового ассета, нашей задачей было добавить миссии, предметы, строительство, прогрессию.'
+    "name": "Brick Battles",
+    "videoLink": "https://www.youtube.com/embed/2LQpmJtqwgI?si=yUk-RJktjstb0QAP",
+    "description": "Быстрая PvP игра с полностью разрушаемыми кирпичными аренами. В качестве ведущего программиста реализовал механики боя, физику разрушения структур, систему анимаций и визуальных эффектов. Провел оптимизацию для гладкого множественного боя в реальном времени."
   },
   {
-    name: 'Brick Battles',
-    videoLink: 'https://www.youtube.com/embed/2LQpmJtqwgI?si=yUk-RJktjstb0QAP',
-    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
+    "name": "Climb Race",
+    "videoLink": "https://www.youtube.com/embed/qpqYZ4Bq6OI?si=MAQEXdOJxlqBLLFM",
+    "description": "Гипер-казуальная гоночная игра на скорость. Разработал пользовательский интерфейс, реализовал интеграцию Facebook SDK и AppsFlyer для аналитики, создал систему анимаций и эффектов. Оптимизировал игру для различных мобильных устройств."
   },
   {
-    name: 'Climb Race',
-    videoLink: 'https://www.youtube.com/embed/qpqYZ4Bq6OI?si=MAQEXdOJxlqBLLFM',
-    description: 'Заказ, исполнял обязанности программиста, дизайнил/верстал UI, занимался внедрением Facebook SDK, AppsFlyer SDK, настраивал анимации/эффекты.'
+    "name": "Royal Armies",
+    "videoLink": "https://www.youtube.com/embed/7T1jF4TgQtw?si=DeHqyTScCfLxa-__",
+    "description": "Tower defense игра со стратегическим геймплеем. В качестве основного программиста реализовал механики размещения башен, системы волн врагов и боевые алгоритмы. Создал сложные анимации боевых эффектов и оптимизировал рендеринг для множественных объектов на сцене."
   },
   {
-    name: 'Pizza sort idle puzzle',
-    videoLink: 'https://www.youtube.com/embed/woUFWxxfgfQ?si=M4zoVmjsh5Q_2TRp',
-    description: 'Пет проект, смешивающий 2 механики: "Idle" и "Merge sort". При создании проекта брал на себя все аспекты разработки.'
+    "name": "Clean Master",
+    "videoLink": "https://www.youtube.com/embed/hPCO2y-liII?si=eCJ08erUW8hKJEvj",
+    "description": "Casual симулятор уборки. Программировал основные механики сбора мусора, системы таймеров и награды. Разработал набор визуальных эффектов трансформации грязных объектов, создал анимации процесса очистки и оптимизировал производительность для мобильных платформ."
   },
   {
-    name: 'Royal Armies',
-    videoLink: 'https://www.youtube.com/embed/7T1jF4TgQtw?si=DeHqyTScCfLxa-__',
-    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
+    "name": "Fly Delivery",
+    "videoLink": "https://www.youtube.com/embed/L8kiIHOsKHk?si=MD0DbqLm_Y_11Vh8",
+    "description": "Авиа-логистическая головоломка. Реализовал механики управления летательным аппаратом, систему маршрутов доставки и обработку столкновений. Создал систему эффектов для посадки и доставки грузов, оптимизировал физику движения."
   },
   {
-    name: 'Clean Master',
-    videoLink: 'https://www.youtube.com/embed/hPCO2y-liII?si=eCJ08erUW8hKJEvj',
-    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
+    "name": "Sword Play",
+    "videoLink": "https://www.youtube.com/embed/PeG9oAum0ZE?si=HXr7bbp7Bd60VkZl",
+    "description": "Динамичная боевая игра с физикой разрезания объектов. Разработал систему боевых комбо, интегрировал асет Dynamic Mesh Cutter для реалистичной физики отсечения. Реализовал сложные парикулярные эффекты, создал систему обратной связи от удара и провел оптимизацию для высокой частоты кадров."
   },
   {
-    name: 'Fly Delivery',
-    videoLink: 'https://www.youtube.com/embed/L8kiIHOsKHk?si=MD0DbqLm_Y_11Vh8',
-    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
-  },
-  {
-    name: 'Sword Play',
-    videoLink: 'https://www.youtube.com/embed/PeG9oAum0ZE?si=HXr7bbp7Bd60VkZl',
-    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация, работа с ассетом "Dynamic mesh cutter".'
-  },
-  {
-    name: 'Dino Merge',
-    videoLink: 'https://www.youtube.com/embed/HPVIqW95MAk?si=5jqIMN8n_ru9W283',
-    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
-  },
-  {
-    name: 'Pandulum',
-    videoLink: 'https://www.youtube.com/embed/p9YzaQOYn98?si=kmAdQqwBOtnDS7Lg',
-    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
-  },
-  {
-    name: 'Pink VS Black',
-    videoLink: 'https://www.youtube.com/embed/BlNKCkVOejw?si=s6HF-3TX4nXgww03',
-    description: 'Заказ, исполнял обязанности программиста, написание механик, работа с анимацией/эффектами, оптимизация.'
-  },
+    "name": "Dino Merge",
+    "videoLink": "https://www.youtube.com/embed/HPVIqW95MAk?si=5jqIMN8n_ru9W283",
+    "description": "Эволюционная головоломка с мерджем динозавров. Программировал механику слияния существ, систему прогрессии и боевой арены. Создал анимации эволюции, эффекты трансформации и оптимизировал UI для интуитивного взаимодействия с множеством объектов."
+  }
 ]
+
 
 /*
   {
