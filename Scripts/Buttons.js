@@ -177,7 +177,7 @@ function fillAboutMeMobile() {
     experienceContainer.innerHTML = '';
     aboutMeData.workExperience.forEach(exp => {
         experienceContainer.innerHTML += `
-            <li>${exp.company}</li>
+            <li class="orange_text">${exp.company}</li>
             <div class="work_expierence-concrete about_info_spacing white_text">${exp.description}</div>
         `;
     });
