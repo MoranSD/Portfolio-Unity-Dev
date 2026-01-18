@@ -1,3 +1,6 @@
+[file name]: Buttons.js
+[file content begin]
+// Данные "Обо мне"
 const aboutMeData = {
     name: "Курсков Леонид",
     profession: "Unity developer",
@@ -132,6 +135,12 @@ function fillAboutMeDesktop() {
         experienceContainer.appendChild(descDiv);
     });
     
+    // Добавляем класс orange_text заголовку "Опыт работы" в десктопной версии
+    const workExpTitleDesktop = document.querySelector('.work_expierence-title');
+    if (workExpTitleDesktop) {
+        workExpTitleDesktop.classList.add('orange_text');
+    }
+    
     // Заполняем ключевые навыки
     const keySkillsContainer = document.querySelector('.about_info-skills:nth-of-type(1) .skills-concrete');
     if (keySkillsContainer) {
@@ -194,6 +203,12 @@ function fillAboutMeMobile() {
             experienceContainer.appendChild(li);
             experienceContainer.appendChild(descDiv);
         });
+    }
+    
+    // Добавляем класс orange_text заголовку "Опыт работы" в мобильной версии
+    const workExpTitleMobile = document.getElementById('workExpirienceTitle');
+    if (workExpTitleMobile) {
+        workExpTitleMobile.classList.add('orange_text');
     }
     
     // Заполняем ключевые навыки
@@ -433,3 +448,4 @@ if(document.getElementById('mobileBlock').style.display != 'none'){
         });
     }
 }
+[file content end]
