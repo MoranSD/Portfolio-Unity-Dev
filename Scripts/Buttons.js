@@ -95,8 +95,6 @@ const projectsArray = [
 
 // Функция для заполнения данных "Обо мне" в десктопной версии
 function fillAboutMeDesktop() {
-    console.log("Заполняем десктопную версию...");
-    
     // Заполняем основную информацию
     const nameEl = document.querySelector('.about_info-main-name');
     const professionEl = document.querySelector('.about_info-main-profession');
@@ -132,7 +130,7 @@ function fillAboutMeDesktop() {
         aboutMeData.workExperience.forEach(exp => {
             const li = document.createElement('li');
             li.textContent = exp.company;
-            li.classList.add('orange_text'); // Добавляем оранжевый цвет названию компании
+            li.classList.add('orange_text');
             
             const descDiv = document.createElement('div');
             descDiv.className = 'work_expierence-concrete about_info_spacing white_text';
@@ -145,7 +143,6 @@ function fillAboutMeDesktop() {
     
     // Заполняем ключевые навыки в десктопной версии
     const skillsContainersDesktop = document.querySelectorAll('.about_info .about_info-skills');
-    console.log("Найдено контейнеров навыков (десктоп):", skillsContainersDesktop.length);
     
     if (skillsContainersDesktop.length >= 1) {
         const keySkillsList = skillsContainersDesktop[0].querySelector('.skills-concrete');
@@ -156,7 +153,6 @@ function fillAboutMeDesktop() {
                 li.textContent = skill;
                 keySkillsList.appendChild(li);
             });
-            console.log("Ключевые навыки добавлены (десктоп)");
         }
     }
     
@@ -169,20 +165,22 @@ function fillAboutMeDesktop() {
                 li.textContent = skill;
                 additionalSkillsList.appendChild(li);
             });
-            console.log("Дополнительные навыки добавлены (десктоп)");
         }
     }
 }
 
 // Функция для заполнения данных "Обо мне" в мобильной версии
 function fillAboutMeMobile() {
-    console.log("Заполняем мобильную версию...");
-    
     // Заполняем основную информацию
-    document.getElementById('aboutMeMobileName').textContent = aboutMeData.name;
-    document.getElementById('aboutMeMobileProfession').textContent = aboutMeData.profession;
-    document.getElementById('aboutMeMobileEmployment').textContent = aboutMeData.employment;
-    document.getElementById('aboutMeMobilePhoto').src = aboutMeData.photoSrc;
+    const nameEl = document.getElementById('aboutMeMobileName');
+    const professionEl = document.getElementById('aboutMeMobileProfession');
+    const employmentEl = document.getElementById('aboutMeMobileEmployment');
+    const photoEl = document.getElementById('aboutMeMobilePhoto');
+    
+    if (nameEl) nameEl.textContent = aboutMeData.name;
+    if (professionEl) professionEl.textContent = aboutMeData.profession;
+    if (employmentEl) employmentEl.textContent = aboutMeData.employment;
+    if (photoEl) photoEl.src = aboutMeData.photoSrc;
     
     // Заполняем описание
     const descriptionDiv = document.querySelector('#aboutMeMobileDesciption > div:first-child');
@@ -212,7 +210,7 @@ function fillAboutMeMobile() {
         aboutMeData.workExperience.forEach(exp => {
             const li = document.createElement('li');
             li.textContent = exp.company;
-            li.classList.add('orange_text'); // Добавляем оранжевый цвет названию компании
+            li.classList.add('orange_text');
             
             const descDiv = document.createElement('div');
             descDiv.className = 'work_expierence-concrete about_info_spacing white_text';
@@ -225,7 +223,6 @@ function fillAboutMeMobile() {
     
     // Заполняем ключевые навыки в мобильной версии
     const skillsContainersMobile = document.querySelectorAll('#aboutMeMobileDesciption .about_info-skills');
-    console.log("Найдено контейнеров навыков (мобильная):", skillsContainersMobile.length);
     
     if (skillsContainersMobile.length >= 1) {
         const keySkillsList = skillsContainersMobile[0].querySelector('.skills-concrete');
@@ -236,7 +233,6 @@ function fillAboutMeMobile() {
                 li.textContent = skill;
                 keySkillsList.appendChild(li);
             });
-            console.log("Ключевые навыки добавлены (мобильная)");
         }
     }
     
@@ -249,20 +245,35 @@ function fillAboutMeMobile() {
                 li.textContent = skill;
                 additionalSkillsList.appendChild(li);
             });
-            console.log("Дополнительные навыки добавлены (мобильная)");
         }
     }
 }
 
-// Проверяем, какая версия отображается
-console.log("Проверяем версию...");
-
-// Заполняем данные в зависимости от версии
-if (document.getElementById('mobileBlock').style.display == 'none' || document.getElementById('mobileBlock').style.display == '') {
-    console.log("Загружена десктопная версия");
-    fillAboutMeDesktop();
+// Основной код, который выполняется при загрузке
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM загружен");
     
-    // Десктопная версия
+    // Сначала заполняем данные для обеих версий
+    fillAboutMeDesktop();
+    fillAboutMeMobile();
+    
+    // Проверяем, какая версия отображается
+    const mobileBlock = document.getElementById('mobileBlock');
+    const desktopBlock = document.getElementById('desktop');
+    
+    if (desktopBlock && getComputedStyle(desktopBlock).display !== 'none') {
+        console.log("Загружена десктопная версия");
+        initDesktopVersion();
+    } else if (mobileBlock && getComputedStyle(mobileBlock).display !== 'none') {
+        console.log("Загружена мобильная версия");
+        initMobileVersion();
+    } else {
+        console.log("Не удалось определить версию");
+    }
+});
+
+// Инициализация десктопной версии
+function initDesktopVersion() {
     const aboutMeButton = document.getElementById('about-button');
     const projectInfoBlock = document.getElementsByClassName("project_info")[0];
     const aboutMeBlock = document.getElementsByClassName("about_info")[0];
@@ -292,8 +303,10 @@ if (document.getElementById('mobileBlock').style.display == 'none' || document.g
     const buttons = document.querySelectorAll('button');
     const projectButtons = Array.from(document.getElementsByClassName('my_projects-buttons-button'));
 
-    aboutMeButton.style.borderColor = 'rgba(94, 94, 94, 0.5)';
-    aboutMeButton.style.color = 'rgba(94, 94, 94, 0.5)';
+    if (aboutMeButton) {
+        aboutMeButton.style.borderColor = 'rgba(94, 94, 94, 0.5)';
+        aboutMeButton.style.color = 'rgba(94, 94, 94, 0.5)';
+    }
 
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
@@ -348,15 +361,16 @@ if (document.getElementById('mobileBlock').style.display == 'none' || document.g
         });
     });
 
-    aboutMeButton.addEventListener('click', function() {
-        aboutMeBlock.style.display = 'flex';
-        projectInfoBlock.style.display = 'none';
-    });
-} else {
-    console.log("Загружена мобильная версия");
-    fillAboutMeMobile();
-    
-    // Мобильная версия
+    if (aboutMeButton) {
+        aboutMeButton.addEventListener('click', function() {
+            aboutMeBlock.style.display = 'flex';
+            projectInfoBlock.style.display = 'none';
+        });
+    }
+}
+
+// Инициализация мобильной версии
+function initMobileVersion() {
     const burgerButton = document.getElementById('burgerButton');
     const navBarTitle = document.getElementById('navBarTitle');
     const projectButtons = document.getElementById('mobileProjectsButtons');
@@ -377,6 +391,13 @@ if (document.getElementById('mobileBlock').style.display == 'none' || document.g
     // Устанавливаем начальное состояние
     if (navBarTitle) navBarTitle.textContent = 'Обо мне';
     
+    // Скрываем меню выбора при загрузке
+    if (selectMenu) selectMenu.style.display = 'none';
+    
+    // Показываем страницу "Обо мне"
+    if (aboutMePage) aboutMePage.style.display = 'flex';
+    if (projectInfo) projectInfo.style.display = 'none';
+    
     // Добавляем обработчики только если элементы существуют
     if (aboutMeButton) {
         aboutMeButton.addEventListener('click', () => {
@@ -384,14 +405,16 @@ if (document.getElementById('mobileBlock').style.display == 'none' || document.g
             currentPage = aboutMePage;
             if (currentPage) currentPage.style.display = 'flex';
             if (selectMenu) selectMenu.style.display = 'none';
-            if (navBarTitle) navBarTitle.textContent = aboutMeButton.textContent;
+            if (navBarTitle) navBarTitle.textContent = 'Обо мне';
             if (burgerButton) burgerButton.classList.remove('burger_active');
         });
     }
 
     if (burgerButton) {
+        console.log("Burger button найден");
         burgerButton.addEventListener('click', () => {
-            if(selectMenu.style.display == '' || selectMenu.style.display == 'none'){
+            console.log("Burger button clicked");
+            if (selectMenu.style.display === 'none' || selectMenu.style.display === '') {
                 if (currentPage) currentPage.style.display = 'none';
                 if (selectMenu) selectMenu.style.display = 'flex';
                 burgerButton.classList.add('burger_active');
@@ -400,7 +423,7 @@ if (document.getElementById('mobileBlock').style.display == 'none' || document.g
                 if (currentPage) currentPage.style.display = 'flex';
                 burgerButton.classList.remove('burger_active');
             }
-            if(!projectButtonsIsCreate){
+            if (!projectButtonsIsCreate) {
                 createProjectsButtons();
             }
         });
@@ -422,7 +445,9 @@ if (document.getElementById('mobileBlock').style.display == 'none' || document.g
             button.style.borderRadius = '6px';
             button.style.margin = '0 auto';
             button.style.marginTop = '5%';
-            projectButtons.appendChild(button);
+            if (projectButtons) {
+                projectButtons.appendChild(button);
+            }
         });
         projectButtonsIsCreate = true;
         addFunctionInProjectButton();
