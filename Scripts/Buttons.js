@@ -54,50 +54,42 @@ const projectsArray = [
     {
         "name": "Sand Box The Game",
         "videoLink": "https://www.youtube.com/embed/juzhNcXmiNM?si=PCUfIvWyGa7RuhxY",
-        "description": "Коммерческий проект. Исполнял роль технического директора и ведущего программиста. Разработал систему миссий, механику строительства и прогрессии игрока, интегрировав их с существующим готовым ассетом. Реализовал полный цикл геймплея от создания контента до оптимизации.",
-        "links": []
+        "description": "Коммерческий проект. Исполнял роль технического директора и ведущего программиста. Разработал систему миссий, механику строительства и прогрессии игрока, интегрировав их с существующим готовым ассетом. Реализовал полный цикл геймплея от создания контента до оптимизации."
     },
     {
         "name": "Brick Battles",
         "videoLink": "https://www.youtube.com/embed/2LQpmJtqwgI?si=yUk-RJktjstb0QAP",
-        "description": "Быстрая PvP игра с полностью разрушаемыми кирпичными аренами. В качестве ведущего программиста реализовал механики боя, физику разрушения структур, систему анимаций и визуальных эффектов. Провел оптимизацию для гладкого множественного боя в реальном времени.",
-        "links": []
+        "description": "Быстрая PvP игра с полностью разрушаемыми кирпичными аренами. В качестве ведущего программиста реализовал механики боя, физику разрушения структур, систему анимаций и визуальных эффектов. Провел оптимизацию для гладкого множественного боя в реальном времени."
     },
     {
         "name": "Climb Race",
         "videoLink": "https://www.youtube.com/embed/qpqYZ4Bq6OI?si=MAQEXdOJxlqBLLFM",
-        "description": "Гипер-казуальная гоночная игра на скорость. Разработал пользовательский интерфейс, реализовал интеграцию Facebook SDK и AppsFlyer для аналитики, создал систему анимаций и эффектов. Оптимизировал игру для различных мобильных устройств.",
-        "links": []
+        "description": "Гипер-казуальная гоночная игра на скорость. Разработал пользовательский интерфейс, реализовал интеграцию Facebook SDK и AppsFlyer для аналитики, создал систему анимаций и эффектов. Оптимизировал игру для различных мобильных устройств."
     },
     {
         "name": "Royal Armies",
         "videoLink": "https://www.youtube.com/embed/7T1jF4TgQtw?si=DeHqyTScCfLxa-__",
-        "description": "Tower defense игра со стратегическим геймплеем. В качестве основного программиста реализовал механики размещения башен, системы волн врагов и боевые алгоритмы. Создал сложные анимации боевых эффектов и оптимизировал рендеринг для множественных объектов на сцене.",
-        "links": []
+        "description": "Tower defense игра со стратегическим геймплеем. В качестве основного программиста реализовал механики размещения башен, системы волн врагов и боевые алгоритмы. Создал сложные анимации боевых эффектов и оптимизировал рендеринг для множественных объектов на сцене."
     },
     {
         "name": "Clean Master",
         "videoLink": "https://www.youtube.com/embed/hPCO2y-liII?si=eCJ08erUW8hKJEvj",
-        "description": "Casual симулятор уборки. Программировал основные механики сбора мусора, системы таймеров и награды. Разработал набор визуальных эффектов трансформации грязных объектов, создал анимации процесса очистки и оптимизировал производительность для мобильных платформ.",
-        "links": []
+        "description": "Casual симулятор уборки. Программировал основные механики сбора мусора, системы таймеров и награды. Разработал набор визуальных эффектов трансформации грязных объектов, создал анимации процесса очистки и оптимизировал производительность для мобильных платформ."
     },
     {
         "name": "Fly Delivery",
         "videoLink": "https://www.youtube.com/embed/L8kiIHOsKHk?si=MD0DbqLm_Y_11Vh8",
-        "description": "Авиа-логистическая головоломка. Реализовал механики управления летательным аппаратом, систему маршрутов доставки и обработку столкновений. Создал систему эффектов для посадки и доставки грузов, оптимизировал физику движения.",
-        "links": []
+        "description": "Авиа-логистическая головоломка. Реализовал механики управления летательным аппаратом, систему маршрутов доставки и обработку столкновений. Создал систему эффектов для посадки и доставки грузов, оптимизировал физику движения."
     },
     {
         "name": "Sword Play",
         "videoLink": "https://www.youtube.com/embed/PeG9oAum0ZE?si=HXr7bbp7Bd60VkZl",
-        "description": "Динамичная боевая игра с физикой разрезания объектов. Разработал систему боевых комбо, интегрировал асет Dynamic Mesh Cutter для реалистичной физики отсечения. Реализовал сложные парикулярные эффекты, создал систему обратной связи от удара и провел оптимизацию для высокой частоты кадров.",
-        "links": []
+        "description": "Динамичная боевая игра с физикой разрезания объектов. Разработал систему боевых комбо, интегрировал асет Dynamic Mesh Cutter для реалистичной физики отсечения. Реализовал сложные парикулярные эффекты, создал систему обратной связи от удара и провел оптимизацию для высокой частоты кадров."
     },
     {
         "name": "Dino Merge",
         "videoLink": "https://www.youtube.com/embed/HPVIqW95MAk?si=5jqIMN8n_ru9W283",
-        "description": "Эволюционная головоломка с мерджем динозавров. Программировал механику слияния существ, систему прогрессии и боевой арены. Создал анимации эволюции, эффекты трансформации и оптимизировал UI для интуитивного взаимодействия с множеством объектов.",
-        "links": []
+        "description": "Эволюционная головоломка с мерджем динозавров. Программировал механику слияния существ, систему прогрессии и боевой арены. Создал анимации эволюции, эффекты трансформации и оптимизировал UI для интуитивного взаимодействия с множеством объектов."
     }
 ];
 
@@ -120,7 +112,7 @@ function fillAboutMeDesktop() {
         linkDiv.className = 'about_info-link';
         linkDiv.innerHTML = `
             <div class="about_info-link_title orange_text">${link.title} -</div>
-            <a class="white_text" href="${link.url}">${link.url}</a>
+            <a class="white_text" href="${link.url}" target="_blank">${link.url.replace('mailto:', '')}</a>
         `;
         linksContainer.appendChild(linkDiv);
     });
@@ -129,25 +121,38 @@ function fillAboutMeDesktop() {
     const experienceContainer = document.querySelector('.work_expierence-studios');
     experienceContainer.innerHTML = '';
     aboutMeData.workExperience.forEach(exp => {
-        experienceContainer.innerHTML += `
-            <li class="orange_text">${exp.company}</li>
-            <div class="work_expierence-concrete about_info_spacing white_text">${exp.description}</div>
-        `;
+        const li = document.createElement('li');
+        li.textContent = exp.company;
+        
+        const descDiv = document.createElement('div');
+        descDiv.className = 'work_expierence-concrete about_info_spacing white_text';
+        descDiv.textContent = exp.description;
+        
+        experienceContainer.appendChild(li);
+        experienceContainer.appendChild(descDiv);
     });
     
     // Заполняем ключевые навыки
     const keySkillsContainer = document.querySelector('.about_info-skills:nth-of-type(1) .skills-concrete');
-    keySkillsContainer.innerHTML = '';
-    aboutMeData.keySkills.forEach(skill => {
-        keySkillsContainer.innerHTML += `<li>${skill}</li>`;
-    });
+    if (keySkillsContainer) {
+        keySkillsContainer.innerHTML = '';
+        aboutMeData.keySkills.forEach(skill => {
+            const li = document.createElement('li');
+            li.textContent = skill;
+            keySkillsContainer.appendChild(li);
+        });
+    }
     
     // Заполняем дополнительные навыки
     const additionalSkillsContainer = document.querySelector('.about_info-skills:nth-of-type(2) .skills-concrete');
-    additionalSkillsContainer.innerHTML = '';
-    aboutMeData.additionalSkills.forEach(skill => {
-        additionalSkillsContainer.innerHTML += `<li>${skill}</li>`;
-    });
+    if (additionalSkillsContainer) {
+        additionalSkillsContainer.innerHTML = '';
+        aboutMeData.additionalSkills.forEach(skill => {
+            const li = document.createElement('li');
+            li.textContent = skill;
+            additionalSkillsContainer.appendChild(li);
+        });
+    }
 }
 
 // Функция для заполнения данных "Обо мне" в мобильной версии
@@ -161,40 +166,62 @@ function fillAboutMeMobile() {
     
     // Заполняем ссылки
     const linksContainer = document.getElementById('aboutMeMobileDesciptionLinks');
-    linksContainer.innerHTML = '';
-    aboutMeData.links.forEach(link => {
-        const linkDiv = document.createElement('div');
-        linkDiv.className = 'about_info-link';
-        linkDiv.innerHTML = `
-            <div class="aboutMeMobileDesciptionLinksText orange_text">${link.title} -</div>
-            <a class="white_text" href="${link.url}">${link.url}</a>
-        `;
-        linksContainer.appendChild(linkDiv);
-    });
+    if (linksContainer) {
+        linksContainer.innerHTML = '';
+        aboutMeData.links.forEach(link => {
+            const linkDiv = document.createElement('div');
+            linkDiv.className = 'about_info-link';
+            linkDiv.innerHTML = `
+                <div class="aboutMeMobileDesciptionLinksText orange_text">${link.title} -</div>
+                <a class="white_text" href="${link.url}" target="_blank">${link.url.replace('mailto:', '')}</a>
+            `;
+            linksContainer.appendChild(linkDiv);
+        });
+    }
     
     // Заполняем опыт работы
     const experienceContainer = document.querySelector('#workExpirience .work_expierence-studios');
-    experienceContainer.innerHTML = '';
-    aboutMeData.workExperience.forEach(exp => {
-        experienceContainer.innerHTML += `
-            <li class="orange_text">${exp.company}</li>
-            <div class="work_expierence-concrete about_info_spacing white_text">${exp.description}</div>
-        `;
-    });
+    if (experienceContainer) {
+        experienceContainer.innerHTML = '';
+        aboutMeData.workExperience.forEach(exp => {
+            const li = document.createElement('li');
+            li.textContent = exp.company;
+            
+            const descDiv = document.createElement('div');
+            descDiv.className = 'work_expierence-concrete about_info_spacing white_text';
+            descDiv.textContent = exp.description;
+            
+            experienceContainer.appendChild(li);
+            experienceContainer.appendChild(descDiv);
+        });
+    }
     
     // Заполняем ключевые навыки
-    const keySkillsContainer = document.querySelectorAll('.about_info-skills')[0].querySelector('.skills-concrete');
-    keySkillsContainer.innerHTML = '';
-    aboutMeData.keySkills.forEach(skill => {
-        keySkillsContainer.innerHTML += `<li>${skill}</li>`;
-    });
+    const skillsContainers = document.querySelectorAll('#aboutMeMobileDesciption .about_info-skills');
+    if (skillsContainers.length >= 1) {
+        const keySkillsContainer = skillsContainers[0].querySelector('.skills-concrete');
+        if (keySkillsContainer) {
+            keySkillsContainer.innerHTML = '';
+            aboutMeData.keySkills.forEach(skill => {
+                const li = document.createElement('li');
+                li.textContent = skill;
+                keySkillsContainer.appendChild(li);
+            });
+        }
+    }
     
     // Заполняем дополнительные навыки
-    const additionalSkillsContainer = document.querySelectorAll('.about_info-skills')[1].querySelector('.skills-concrete');
-    additionalSkillsContainer.innerHTML = '';
-    aboutMeData.additionalSkills.forEach(skill => {
-        additionalSkillsContainer.innerHTML += `<li>${skill}</li>`;
-    });
+    if (skillsContainers.length >= 2) {
+        const additionalSkillsContainer = skillsContainers[1].querySelector('.skills-concrete');
+        if (additionalSkillsContainer) {
+            additionalSkillsContainer.innerHTML = '';
+            aboutMeData.additionalSkills.forEach(skill => {
+                const li = document.createElement('li');
+                li.textContent = skill;
+                additionalSkillsContainer.appendChild(li);
+            });
+        }
+    }
 }
 
 // Основной код
@@ -267,6 +294,8 @@ if(document.getElementById('mobileBlock').style.display == 'none' || document.ge
                 video.width = '100%';
                 video.style.border = 'none';
                 video.src = project.videoLink;
+                video.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                video.allowFullscreen = true;
                 projectVideo.appendChild(video);
 
                 projectName.textContent = buttonText;
@@ -294,11 +323,7 @@ if(document.getElementById('mobileBlock').style.display == 'none' || document.ge
 
 if(document.getElementById('mobileBlock').style.display != 'none'){
     // Мобильная версия
-    const selectButtonsArray = [];
-    projectsArray.forEach(project => {
-        selectButtonsArray.push({name: project.name});
-    });
-
+    
     // Заполняем данные "Обо мне"
     fillAboutMeMobile();
 
@@ -386,6 +411,8 @@ if(document.getElementById('mobileBlock').style.display != 'none'){
                     video.width = '100%';
                     video.style.border = 'none';
                     video.src = project.videoLink;
+                    video.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                    video.allowFullscreen = true;
                     projectVideo.appendChild(video);
 
                     projectName.textContent = project.name;
