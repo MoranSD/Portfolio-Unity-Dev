@@ -1,6 +1,3 @@
-[file name]: Buttons.js
-[file content begin]
-// Данные "Обо мне"
 const aboutMeData = {
     name: "Курсков Леонид",
     profession: "Unity developer",
@@ -98,8 +95,6 @@ const projectsArray = [
 
 // Функция для заполнения данных "Обо мне" в десктопной версии
 function fillAboutMeDesktop() {
-    const aboutInfo = document.querySelector('.about_info');
-    
     // Заполняем основную информацию
     document.querySelector('.about_info-main-name').textContent = aboutMeData.name;
     document.querySelector('.about_info-main-profession').textContent = aboutMeData.profession;
@@ -120,12 +115,13 @@ function fillAboutMeDesktop() {
         linksContainer.appendChild(linkDiv);
     });
     
-    // Заполняем опыт работы
+    // Заполняем опыт работы с оранжевым цветом для названий компаний
     const experienceContainer = document.querySelector('.work_expierence-studios');
     experienceContainer.innerHTML = '';
     aboutMeData.workExperience.forEach(exp => {
         const li = document.createElement('li');
         li.textContent = exp.company;
+        li.classList.add('orange_text'); // Добавляем оранжевый цвет названию компании
         
         const descDiv = document.createElement('div');
         descDiv.className = 'work_expierence-concrete about_info_spacing white_text';
@@ -134,12 +130,6 @@ function fillAboutMeDesktop() {
         experienceContainer.appendChild(li);
         experienceContainer.appendChild(descDiv);
     });
-    
-    // Добавляем класс orange_text заголовку "Опыт работы" в десктопной версии
-    const workExpTitleDesktop = document.querySelector('.work_expierence-title');
-    if (workExpTitleDesktop) {
-        workExpTitleDesktop.classList.add('orange_text');
-    }
     
     // Заполняем ключевые навыки
     const keySkillsContainer = document.querySelector('.about_info-skills:nth-of-type(1) .skills-concrete');
@@ -171,7 +161,12 @@ function fillAboutMeMobile() {
     document.getElementById('aboutMeMobileProfession').textContent = aboutMeData.profession;
     document.getElementById('aboutMeMobileEmployment').textContent = aboutMeData.employment;
     document.getElementById('aboutMeMobilePhoto').src = aboutMeData.photoSrc;
-    document.querySelector('#aboutMeMobileDesciption > div:first-child').innerHTML = aboutMeData.description;
+    
+    // Заполняем описание
+    const descriptionDiv = document.querySelector('#aboutMeMobileDesciption > div:first-child');
+    if (descriptionDiv) {
+        descriptionDiv.innerHTML = aboutMeData.description;
+    }
     
     // Заполняем ссылки
     const linksContainer = document.getElementById('aboutMeMobileDesciptionLinks');
@@ -188,13 +183,14 @@ function fillAboutMeMobile() {
         });
     }
     
-    // Заполняем опыт работы
+    // Заполняем опыт работы с оранжевым цветом для названий компаний
     const experienceContainer = document.querySelector('#workExpirience .work_expierence-studios');
     if (experienceContainer) {
         experienceContainer.innerHTML = '';
         aboutMeData.workExperience.forEach(exp => {
             const li = document.createElement('li');
             li.textContent = exp.company;
+            li.classList.add('orange_text'); // Добавляем оранжевый цвет названию компании
             
             const descDiv = document.createElement('div');
             descDiv.className = 'work_expierence-concrete about_info_spacing white_text';
@@ -205,37 +201,26 @@ function fillAboutMeMobile() {
         });
     }
     
-    // Добавляем класс orange_text заголовку "Опыт работы" в мобильной версии
-    const workExpTitleMobile = document.getElementById('workExpirienceTitle');
-    if (workExpTitleMobile) {
-        workExpTitleMobile.classList.add('orange_text');
-    }
-    
     // Заполняем ключевые навыки
-    const skillsContainers = document.querySelectorAll('#aboutMeMobileDesciption .about_info-skills');
-    if (skillsContainers.length >= 1) {
-        const keySkillsContainer = skillsContainers[0].querySelector('.skills-concrete');
-        if (keySkillsContainer) {
-            keySkillsContainer.innerHTML = '';
-            aboutMeData.keySkills.forEach(skill => {
-                const li = document.createElement('li');
-                li.textContent = skill;
-                keySkillsContainer.appendChild(li);
-            });
-        }
+    const keySkillsContainer = document.querySelector('#aboutMeMobileDesciption .about_info-skills:nth-of-type(1) .skills-concrete');
+    if (keySkillsContainer) {
+        keySkillsContainer.innerHTML = '';
+        aboutMeData.keySkills.forEach(skill => {
+            const li = document.createElement('li');
+            li.textContent = skill;
+            keySkillsContainer.appendChild(li);
+        });
     }
     
     // Заполняем дополнительные навыки
-    if (skillsContainers.length >= 2) {
-        const additionalSkillsContainer = skillsContainers[1].querySelector('.skills-concrete');
-        if (additionalSkillsContainer) {
-            additionalSkillsContainer.innerHTML = '';
-            aboutMeData.additionalSkills.forEach(skill => {
-                const li = document.createElement('li');
-                li.textContent = skill;
-                additionalSkillsContainer.appendChild(li);
-            });
-        }
+    const additionalSkillsContainer = document.querySelector('#aboutMeMobileDesciption .about_info-skills:nth-of-type(2) .skills-concrete');
+    if (additionalSkillsContainer) {
+        additionalSkillsContainer.innerHTML = '';
+        aboutMeData.additionalSkills.forEach(skill => {
+            const li = document.createElement('li');
+            li.textContent = skill;
+            additionalSkillsContainer.appendChild(li);
+        });
     }
 }
 
@@ -448,4 +433,3 @@ if(document.getElementById('mobileBlock').style.display != 'none'){
         });
     }
 }
-[file content end]
