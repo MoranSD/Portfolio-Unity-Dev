@@ -131,25 +131,25 @@ function fillAboutMeDesktop() {
         experienceContainer.appendChild(descDiv);
     });
     
-    // Заполняем ключевые навыки
-    const keySkillsContainer = document.querySelector('.about_info-skills:nth-of-type(1) .skills-concrete');
-    if (keySkillsContainer) {
-        keySkillsContainer.innerHTML = '';
+    // Заполняем ключевые навыки в десктопной версии
+    const keySkillsListDesktop = document.querySelector('.about_info .about_info-skills:nth-of-type(1) .skills-concrete');
+    if (keySkillsListDesktop) {
+        keySkillsListDesktop.innerHTML = '';
         aboutMeData.keySkills.forEach(skill => {
             const li = document.createElement('li');
             li.textContent = skill;
-            keySkillsContainer.appendChild(li);
+            keySkillsListDesktop.appendChild(li);
         });
     }
     
-    // Заполняем дополнительные навыки
-    const additionalSkillsContainer = document.querySelector('.about_info-skills:nth-of-type(2) .skills-concrete');
-    if (additionalSkillsContainer) {
-        additionalSkillsContainer.innerHTML = '';
+    // Заполняем дополнительные навыки в десктопной версии
+    const additionalSkillsListDesktop = document.querySelector('.about_info .about_info-skills:nth-of-type(2) .skills-concrete');
+    if (additionalSkillsListDesktop) {
+        additionalSkillsListDesktop.innerHTML = '';
         aboutMeData.additionalSkills.forEach(skill => {
             const li = document.createElement('li');
             li.textContent = skill;
-            additionalSkillsContainer.appendChild(li);
+            additionalSkillsListDesktop.appendChild(li);
         });
     }
 }
@@ -201,25 +201,27 @@ function fillAboutMeMobile() {
         });
     }
     
-    // Заполняем ключевые навыки
-    const keySkillsContainer = document.querySelector('#aboutMeMobileDesciption .about_info-skills:nth-of-type(1) .skills-concrete');
-    if (keySkillsContainer) {
-        keySkillsContainer.innerHTML = '';
+    // Заполняем ключевые навыки в мобильной версии
+    // Первый блок с классом "about_info-skills" в #aboutMeMobileDesciption - это ключевые навыки
+    const keySkillsListMobile = document.querySelector('#aboutMeMobileDesciption .about_info-skills:nth-of-type(1) .skills-concrete');
+    if (keySkillsListMobile) {
+        keySkillsListMobile.innerHTML = '';
         aboutMeData.keySkills.forEach(skill => {
             const li = document.createElement('li');
             li.textContent = skill;
-            keySkillsContainer.appendChild(li);
+            keySkillsListMobile.appendChild(li);
         });
     }
     
-    // Заполняем дополнительные навыки
-    const additionalSkillsContainer = document.querySelector('#aboutMeMobileDesciption .about_info-skills:nth-of-type(2) .skills-concrete');
-    if (additionalSkillsContainer) {
-        additionalSkillsContainer.innerHTML = '';
+    // Заполняем дополнительные навыки в мобильной версии
+    // Второй блок с классом "about_info-skills" в #aboutMeMobileDesciption - это дополнительные навыки
+    const additionalSkillsListMobile = document.querySelector('#aboutMeMobileDesciption .about_info-skills:nth-of-type(2) .skills-concrete');
+    if (additionalSkillsListMobile) {
+        additionalSkillsListMobile.innerHTML = '';
         aboutMeData.additionalSkills.forEach(skill => {
             const li = document.createElement('li');
             li.textContent = skill;
-            additionalSkillsContainer.appendChild(li);
+            additionalSkillsListMobile.appendChild(li);
         });
     }
 }
@@ -344,29 +346,35 @@ if(document.getElementById('mobileBlock').style.display != 'none'){
     const projectDescription = document.getElementById('projectInfoDescription');
 
     const aboutMeButton = document.getElementById('selectMenuAboutMeButton');
-    aboutMeButton.addEventListener('click', () => {
-        currentPage.style.display = 'none';
-        currentPage = aboutMePage;
-        currentPage.style.display = 'flex';
-        selectMenu.style.display = 'none';
-        navBarTitle.textContent = aboutMeButton.textContent;
-        burgerButton.classList.remove('burger_active');
-    });
-
-    burgerButton.addEventListener('click', () => {
-        if(selectMenu.style.display == '' || selectMenu.style.display == 'none'){
+    if (aboutMeButton) {
+        aboutMeButton.addEventListener('click', () => {
             currentPage.style.display = 'none';
-            selectMenu.style.display = 'flex';
-            burgerButton.classList.add('burger_active');
-        } else {
-            selectMenu.style.display = 'none';
+            currentPage = aboutMePage;
             currentPage.style.display = 'flex';
-            burgerButton.classList.remove('burger_active');
-        }
-        if(!projectButtonsIsCreate){
-            createProjectsButtons();
-        }
-    });
+            selectMenu.style.display = 'none';
+            navBarTitle.textContent = aboutMeButton.textContent;
+            if (burgerButton) {
+                burgerButton.classList.remove('burger_active');
+            }
+        });
+    }
+
+    if (burgerButton) {
+        burgerButton.addEventListener('click', () => {
+            if(selectMenu.style.display == '' || selectMenu.style.display == 'none'){
+                currentPage.style.display = 'none';
+                selectMenu.style.display = 'flex';
+                burgerButton.classList.add('burger_active');
+            } else {
+                selectMenu.style.display = 'none';
+                currentPage.style.display = 'flex';
+                burgerButton.classList.remove('burger_active');
+            }
+            if(!projectButtonsIsCreate){
+                createProjectsButtons();
+            }
+        });
+    }
 
     function createProjectsButtons(){
         projectsArray.forEach(function (project){
@@ -392,7 +400,9 @@ if(document.getElementById('mobileBlock').style.display != 'none'){
         const projectsButtons = Array.from(document.getElementsByClassName('mobileProjectsButtons'));
         projectsButtons.forEach((button) => {
             button.addEventListener('click', () => {
-                burgerButton.classList.remove('burger_active');
+                if (burgerButton) {
+                    burgerButton.classList.remove('burger_active');
+                }
                 const project = projectsArray.find(p => p.name === button.textContent);
                 selectMenu.style.display = 'none';
                 currentPage = projectInfo;
