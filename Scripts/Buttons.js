@@ -54,12 +54,17 @@ const projectsArray = [
     {
         "name": "SpinBound",
         "videoLink": "https://www.youtube.com/embed/lKWPlhaGi8o",
-        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть. Использовал MVC и ивентную арихитектуру"
+        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть. Использовал MVC и ивентную арихитектуру."
     },
     {
         "name": "Sand Box The Game",
         "videoLink": "https://www.youtube.com/embed/juzhNcXmiNM?si=PCUfIvWyGa7RuhxY",
         "description": "Коммерческий проект. Исполнял роль тим лида. Разработал систему миссий, механику строительства и прогрессии игрока, интегрировав их с существующим готовым ассетом. Реализовал полный цикл геймплея от создания контента до оптимизации."
+    },
+    {
+        "name": "Harvest Hill Farm",
+        "videoLink": "https://www.youtube.com/embed/r4C-Ig_HR24",
+        "description": "Кози игра про ферму с прогрессией. Официальный трейлер - https://www.youtube.com/watch?v=cwKmUr2dzoU Google play - https://play.google.com/store/apps/details?id=com.BrexitMan.HarvestHillFarm"
     },
     {
         "name": "Brick Battles",
