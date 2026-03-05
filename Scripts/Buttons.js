@@ -52,6 +52,11 @@ const aboutMeData = {
 // Данные проектов
 const projectsArray = [
     {
+        "name": "SpinBound",
+        "videoLink": "https://www.youtube.com/embed/lKWPlhaGi8o",
+        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть. Использовал MVC и ивентную арихитектуру"
+    },
+    {
         "name": "Sand Box The Game",
         "videoLink": "https://www.youtube.com/embed/juzhNcXmiNM?si=PCUfIvWyGa7RuhxY",
         "description": "Коммерческий проект. Исполнял роль технического директора и ведущего программиста. Разработал систему миссий, механику строительства и прогрессии игрока, интегрировав их с существующим готовым ассетом. Реализовал полный цикл геймплея от создания контента до оптимизации."
