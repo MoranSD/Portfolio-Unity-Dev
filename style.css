@@ -602,3 +602,77 @@ button {
         display: none;
     }
 }
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background: #ff6b35;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+/* PDF Download Buttons - Right Bottom Corner */
+.pdf-buttons-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.pdf-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(225, 225, 225, 1); /* .whitetext */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(94, 94, 94, 0.8); /* .rightblock border */
+}
+
+.pdf-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(94, 94, 94, 0.5);
+  border-color: rgba(222, 118, 76, 1); /* .orangetext */
+}
+
+.pdf-eng {
+  background: rgba(94, 94, 94, 0.95); /* .rightblock фон */
+}
+
+.pdf-ru {
+  background: rgba(94, 94, 94, 0.95); /* Тот же цвет для монотонности */
+}
+
+.pdf-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Текст внутри кнопок */
+.pdf-btn span {
+  font-size: 12px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .pdf-buttons-container {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .pdf-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 12px;
+  }
+}
