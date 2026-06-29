@@ -47,7 +47,7 @@ const projectsArray = [
     {
         "name": "SpinBound",
         "videoLink": "https://www.youtube.com/embed/lKWPlhaGi8o",
-        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть и сборку проекта. Успешно реализовал сложную ивент-ориентированную архитектуру с MVC‑паттерном для UI и контролем игрового потока, это позволило гибко управлять десятками сущностей без потери производительности.<a href='https://store.steampowered.com/app/4403320/SpinBound/' target='_blank'>Steam</a>"
+        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть и сборку проекта. Успешно реализовал сложную ивент-ориентированную архитектуру с MVC‑паттерном для UI и контролем игрового потока, это позволило гибко управлять десятками сущностей без потери производительности. Steam - https://store.steampowered.com/app/4403320/SpinBound/"
     },
     {
         "name": "Sand Box The Game",
@@ -57,7 +57,7 @@ const projectsArray = [
     {
         "name": "Harvest Hill Farm",
         "videoLink": "https://www.youtube.com/embed/r4C-Ig_HR24",
-        "description": "Кози игра про ферму с прогрессией. Официальный трейлер - <a href='https://www.youtube.com/watch?v=cwKmUr2dzoU' target='_blank'>YouTube</a> Google play - <a href='https://play.google.com/store/apps/details?id=com.BrexitMan.HarvestHillFarm' target='_blank'>Google Play</a>"
+        "description": "Кози игра про ферму с прогрессией. Официальный трейлер - https://www.youtube.com/watch?v=cwKmUr2dzoU Google play - https://play.google.com/store/apps/details?id=com.BrexitMan.HarvestHillFarm"
     },
     {
         "name": "Brick Battles",
