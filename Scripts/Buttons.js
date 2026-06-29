@@ -5,8 +5,6 @@ const aboutMeData = {
     photoSrc: "Images/photo.png",
     description: `Последние <span class="orange_text">4 года</span> разрабатываю игры — от Hyper‑Casual и WebGL до <span class="orange_text">PC Steam</span> проектов.
 <br><br>
-Успешно реализовал сложную ивент-ориентированную архитектуру с MVC‑паттерном для UI и контролем игрового потока — это позволило гибко управлять десятками сущностей без потери производительности.
-<br>
 Моя зона ответственности — <span class="orange_text">сборка готового продукта</span> из всех составляющих и обеспечение их бесшовного взаимодействия.
 <br><br>
 Увлечён проектированием надёжных <span class="orange_text">архитектурных решений</span>, которые упрощают разработку и масштабирование. Нацелен на создание стабильных игровых систем и эффективную работу в команде.`,
@@ -49,7 +47,7 @@ const projectsArray = [
     {
         "name": "SpinBound",
         "videoLink": "https://www.youtube.com/embed/lKWPlhaGi8o",
-        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть и сборку проекта. Использовал MVC и ивентную арихитектуру. <a href='https://store.steampowered.com/app/4403320/SpinBound/' target='_blank'>Steam</a>"
+        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть и сборку проекта. Успешно реализовал сложную ивент-ориентированную архитектуру с MVC‑паттерном для UI и контролем игрового потока, это позволило гибко управлять десятками сущностей без потери производительности.<a href='https://store.steampowered.com/app/4403320/SpinBound/' target='_blank'>Steam</a>"
     },
     {
         "name": "Sand Box The Game",
