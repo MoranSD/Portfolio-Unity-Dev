@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Инициализация десктопной версии
+// ----- ДЕСКТОПНАЯ ВЕРСИЯ -----
 function initDesktopVersion() {
     const aboutMeButton = document.getElementById('about-button');
     const projectInfoBlock = document.getElementsByClassName("project_info")[0];
@@ -285,8 +285,9 @@ function initDesktopVersion() {
     const projectLinks = document.getElementById('projectLinks');
     const projectsButtons = document.getElementById('projectsButtons');
 
-    function createProjectsButtons(){
-        projectsArray.forEach(function (project){
+    // Создаём кнопки проектов
+    function createProjectsButtons() {
+        projectsArray.forEach(function (project) {
             const button = document.createElement('button');
             button.style.width = '100%';
             button.style.marginBottom = '1vw';
@@ -300,7 +301,7 @@ function initDesktopVersion() {
         });
     }
     createProjectsButtons();
-    
+
     const buttons = document.querySelectorAll('button');
     const projectButtons = Array.from(document.getElementsByClassName('my_projects-buttons-button'));
 
@@ -321,13 +322,14 @@ function initDesktopVersion() {
     });
 
     projectButtons.forEach((button) => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             const buttonText = this.textContent;
             aboutMeBlock.style.display = 'none';
             projectInfoBlock.style.display = 'flex';
             projectInfoBlock.classList.add('active');
             button.classList.add('active');
 
+            // Очищаем контейнеры
             projectVideo.innerHTML = '';
             projectName.textContent = '';
             projectDescription.textContent = '';
@@ -336,6 +338,7 @@ function initDesktopVersion() {
             const project = projectsArray.find(p => p.name === buttonText);
 
             if (project) {
+                // Видео
                 const video = document.createElement('iframe');
                 video.height = '100%';
                 video.width = '100%';
@@ -345,35 +348,43 @@ function initDesktopVersion() {
                 video.allowFullscreen = true;
                 projectVideo.appendChild(video);
 
+                // Название
                 projectName.textContent = buttonText;
                 projectName.style.textTransform = 'capitalize';
+
+                // Описание
                 projectDescription.textContent = project.description;
 
-                // Отображаем ссылки (если есть)
+                // Ссылки (после описания) – только заголовок, кликабельно, с белой точкой
                 if (project.links && project.links.length > 0) {
                     project.links.forEach(function (linkObj) {
                         const linkDiv = document.createElement('div');
                         linkDiv.className = 'project_link_item';
                         linkDiv.innerHTML = `
-                            <span class="orange_text">${linkObj.title} – </span>
-                            <a class="white_text" href="${linkObj.url}" target="_blank">${linkObj.url}</a>
+                            <span class="white_text">• </span>
+                            <a class="orange_text" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
                         `;
                         projectLinks.appendChild(linkDiv);
                     });
+                }
+
+                // Гарантируем порядок: описание → ссылки
+                if (projectDescription.nextSibling !== projectLinks) {
+                    projectDescription.parentNode.insertBefore(projectLinks, projectDescription.nextSibling);
                 }
             }
         });
     });
 
     if (aboutMeButton) {
-        aboutMeButton.addEventListener('click', function() {
+        aboutMeButton.addEventListener('click', function () {
             aboutMeBlock.style.display = 'flex';
             projectInfoBlock.style.display = 'none';
         });
     }
 }
 
-// Инициализация мобильной версии
+// ----- МОБИЛЬНАЯ ВЕРСИЯ -----
 function initMobileVersion() {
     const burgerButton = document.getElementById('burgerButton');
     const navBarTitle = document.getElementById('navBarTitle');
@@ -384,19 +395,19 @@ function initMobileVersion() {
     const projectInfo = document.getElementById('projectInfoBlock');
     const selectMenu = document.getElementById('selectMenu');
     let currentPage = aboutMePage;
-    
+
     const projectName = document.getElementById('projectInfoTitle');
     const projectLinks = document.getElementById('projectInfoLinks');
     const projectVideo = document.getElementById('mobileProjectVideo');
     const projectDescription = document.getElementById('projectInfoDescription');
 
     const aboutMeButton = document.getElementById('selectMenuAboutMeButton');
-    
+
     if (navBarTitle) navBarTitle.textContent = 'Обо мне';
     if (selectMenu) selectMenu.style.display = 'none';
     if (aboutMePage) aboutMePage.style.display = 'flex';
     if (projectInfo) projectInfo.style.display = 'none';
-    
+
     if (aboutMeButton) {
         aboutMeButton.addEventListener('click', () => {
             if (currentPage) currentPage.style.display = 'none';
@@ -425,8 +436,8 @@ function initMobileVersion() {
         });
     }
 
-    function createProjectsButtons(){
-        projectsArray.forEach(function (project){
+    function createProjectsButtons() {
+        projectsArray.forEach(function (project) {
             const button = document.createElement('button');
             button.style.width = '80%';
             button.style.marginBottom = '1vw';
@@ -447,7 +458,7 @@ function initMobileVersion() {
         addFunctionInProjectButton();
     }
 
-    function addFunctionInProjectButton(){
+    function addFunctionInProjectButton() {
         const projectsButtons = Array.from(document.getElementsByClassName('mobileProjectsButtons'));
         projectsButtons.forEach((button) => {
             button.addEventListener('click', () => {
@@ -461,12 +472,14 @@ function initMobileVersion() {
                     navBarTitle.style.textWrap = 'nowrap';
                 }
 
+                // Очищаем контейнеры
                 if (projectVideo) projectVideo.innerHTML = '';
                 if (projectName) projectName.textContent = '';
                 if (projectDescription) projectDescription.textContent = '';
                 if (projectLinks) projectLinks.innerHTML = '';
 
                 if (project) {
+                    // Видео
                     if (projectVideo) {
                         const video = document.createElement('iframe');
                         video.height = '100%';
@@ -478,24 +491,35 @@ function initMobileVersion() {
                         projectVideo.appendChild(video);
                     }
 
+                    // Название
                     if (projectName) {
                         projectName.textContent = project.name;
                         projectName.style.textTransform = 'capitalize';
                     }
-                    
-                    if (projectDescription) projectDescription.textContent = project.description;
 
-                    // Отображаем ссылки (если есть)
+                    // Описание
+                    if (projectDescription) {
+                        projectDescription.textContent = project.description;
+                    }
+
+                    // Ссылки (после описания)
                     if (projectLinks && project.links && project.links.length > 0) {
                         project.links.forEach(function (linkObj) {
                             const linkDiv = document.createElement('div');
                             linkDiv.className = 'project_link_item';
                             linkDiv.innerHTML = `
-                                <span class="orange_text">${linkObj.title} – </span>
-                                <a class="white_text" href="${linkObj.url}" target="_blank">${linkObj.url}</a>
+                                <span class="white_text">• </span>
+                                <a class="orange_text" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
                             `;
                             projectLinks.appendChild(linkDiv);
                         });
+                    }
+
+                    // Гарантируем порядок: описание → ссылки
+                    if (projectDescription && projectLinks) {
+                        if (projectDescription.nextSibling !== projectLinks) {
+                            projectDescription.parentNode.insertBefore(projectLinks, projectDescription.nextSibling);
+                        }
                     }
                 }
             });
