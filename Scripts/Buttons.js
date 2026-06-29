@@ -274,7 +274,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// ----- ДЕСКТОПНАЯ ВЕРСИЯ -----
 function initDesktopVersion() {
     const aboutMeButton = document.getElementById('about-button');
     const projectInfoBlock = document.getElementsByClassName("project_info")[0];
@@ -285,7 +284,6 @@ function initDesktopVersion() {
     const projectLinks = document.getElementById('projectLinks');
     const projectsButtons = document.getElementById('projectsButtons');
 
-    // Создаём кнопки проектов
     function createProjectsButtons() {
         projectsArray.forEach(function (project) {
             const button = document.createElement('button');
@@ -329,7 +327,6 @@ function initDesktopVersion() {
             projectInfoBlock.classList.add('active');
             button.classList.add('active');
 
-            // Очищаем контейнеры
             projectVideo.innerHTML = '';
             projectName.textContent = '';
             projectDescription.textContent = '';
@@ -338,7 +335,6 @@ function initDesktopVersion() {
             const project = projectsArray.find(p => p.name === buttonText);
 
             if (project) {
-                // Видео
                 const video = document.createElement('iframe');
                 video.height = '100%';
                 video.width = '100%';
@@ -348,27 +344,27 @@ function initDesktopVersion() {
                 video.allowFullscreen = true;
                 projectVideo.appendChild(video);
 
-                // Название
                 projectName.textContent = buttonText;
                 projectName.style.textTransform = 'capitalize';
-
-                // Описание
                 projectDescription.textContent = project.description;
 
-                // Ссылки (после описания) – только заголовок, кликабельно, с белой точкой
+                // ---- ССЫЛКИ (с отступом и оранжевым цветом) ----
                 if (project.links && project.links.length > 0) {
+                    // Добавляем отступ сверху для блока ссылок
+                    projectLinks.style.marginTop = '12px';
+
                     project.links.forEach(function (linkObj) {
                         const linkDiv = document.createElement('div');
                         linkDiv.className = 'project_link_item';
                         linkDiv.innerHTML = `
                             <span class="white_text">• </span>
-                            <a class="orange_text" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
+                            <a style="color: #FF8C00; text-decoration: none;" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
                         `;
                         projectLinks.appendChild(linkDiv);
                     });
                 }
 
-                // Гарантируем порядок: описание → ссылки
+                // Перемещаем ссылки после описания
                 if (projectDescription.nextSibling !== projectLinks) {
                     projectDescription.parentNode.insertBefore(projectLinks, projectDescription.nextSibling);
                 }
@@ -384,7 +380,6 @@ function initDesktopVersion() {
     }
 }
 
-// ----- МОБИЛЬНАЯ ВЕРСИЯ -----
 function initMobileVersion() {
     const burgerButton = document.getElementById('burgerButton');
     const navBarTitle = document.getElementById('navBarTitle');
@@ -472,14 +467,12 @@ function initMobileVersion() {
                     navBarTitle.style.textWrap = 'nowrap';
                 }
 
-                // Очищаем контейнеры
                 if (projectVideo) projectVideo.innerHTML = '';
                 if (projectName) projectName.textContent = '';
                 if (projectDescription) projectDescription.textContent = '';
                 if (projectLinks) projectLinks.innerHTML = '';
 
                 if (project) {
-                    // Видео
                     if (projectVideo) {
                         const video = document.createElement('iframe');
                         video.height = '100%';
@@ -491,31 +484,32 @@ function initMobileVersion() {
                         projectVideo.appendChild(video);
                     }
 
-                    // Название
                     if (projectName) {
                         projectName.textContent = project.name;
                         projectName.style.textTransform = 'capitalize';
                     }
 
-                    // Описание
                     if (projectDescription) {
                         projectDescription.textContent = project.description;
                     }
 
-                    // Ссылки (после описания)
+                    // ---- ССЫЛКИ (с отступом и оранжевым цветом) ----
                     if (projectLinks && project.links && project.links.length > 0) {
+                        // Добавляем отступ сверху для блока ссылок
+                        projectLinks.style.marginTop = '12px';
+
                         project.links.forEach(function (linkObj) {
                             const linkDiv = document.createElement('div');
                             linkDiv.className = 'project_link_item';
                             linkDiv.innerHTML = `
                                 <span class="white_text">• </span>
-                                <a class="orange_text" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
+                                <a style="color: #FF8C00; text-decoration: none;" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
                             `;
                             projectLinks.appendChild(linkDiv);
                         });
                     }
 
-                    // Гарантируем порядок: описание → ссылки
+                    // Перемещаем ссылки после описания
                     if (projectDescription && projectLinks) {
                         if (projectDescription.nextSibling !== projectLinks) {
                             projectDescription.parentNode.insertBefore(projectLinks, projectDescription.nextSibling);
