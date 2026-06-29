@@ -3,18 +3,13 @@ const aboutMeData = {
     profession: "Unity developer",
     employment: "full time / part time",
     photoSrc: "Images/photo.png",
-    description: `Последние <span class="orange_text">4</span> года занимаюсь разработкой игр. Разрабатывал <span class="orange_text">Hyper-Casual</span> и <span class="orange_text">WebGL</span> игры.
-    В настоящее время сосредоточен на создании более крупных, комплексных <span class="orange_text">PC Steam</span> игр.
-    <br>
-    <br>
-    Успешно разрабатывал сложные проекты, согласовывая усилия команды с целями продукта.
-    <br>
-    Мои навыки охватывают не только <span class="orange_text">Unity</span>, но и <span class="orange_text">Backed-End</span> системы, 
-    что значительно расширяет мои возможности при создании <span class="orange_text">многопользовательских</span> игр.
-    <br>
-    <br>
-    Я увлечен проектированием эффективных <span class="orange_text">архитектурных решений</span> и <span class="orange_text">геймплейных</span> механик. 
-    Быстро адаптируюсь к новым задачам и легко налаживаю коммуникацию в команде.`,
+    description: `Последние <span class="orange_text">4 года</span> разрабатываю игры — от Hyper‑Casual и WebGL до <span class="orange_text">PC Steam</span> проектов.
+<br><br>
+Успешно реализовал сложную ивент-ориентированную архитектуру с MVC‑паттерном для UI и контролем игрового потока — это позволило гибко управлять десятками сущностей без потери производительности.
+<br>
+Моя зона ответственности — <span class="orange_text">сборка готового продукта</span> из всех составляющих и обеспечение их бесшовного взаимодействия.
+<br><br>
+Увлечён проектированием надёжных <span class="orange_text">архитектурных решений</span>, которые упрощают разработку и масштабирование. Нацелен на создание стабильных игровых систем и эффективную работу в команде.`,
     links: [
         { title: "Телеграмм", url: "https://t.me/msdGameDev" },
         { title: "Блог", url: "https://t.me/msdBlog" },
@@ -54,7 +49,7 @@ const projectsArray = [
     {
         "name": "SpinBound",
         "videoLink": "https://www.youtube.com/embed/lKWPlhaGi8o",
-        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть. Использовал MVC и ивентную арихитектуру."
+        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть и сборку проекта. Использовал MVC и ивентную арихитектуру."
     },
     {
         "name": "Sand Box The Game",
@@ -64,37 +59,37 @@ const projectsArray = [
     {
         "name": "Harvest Hill Farm",
         "videoLink": "https://www.youtube.com/embed/r4C-Ig_HR24",
-        "description": "Кози игра про ферму с прогрессией. Официальный трейлер - https://www.youtube.com/watch?v=cwKmUr2dzoU Google play - https://play.google.com/store/apps/details?id=com.BrexitMan.HarvestHillFarm"
+        "description": "Кози игра про ферму с прогрессией. Официальный трейлер - <a href='https://www.youtube.com/watch?v=cwKmUr2dzoU' target='_blank'>YouTube</a> Google play - <a href='https://play.google.com/store/apps/details?id=com.BrexitMan.HarvestHillFarm' target='_blank'>Google Play</a>"
     },
     {
         "name": "Brick Battles",
         "videoLink": "https://www.youtube.com/embed/2LQpmJtqwgI?si=yUk-RJktjstb0QAP",
-        "description": "Быстрая PvP игра с полностью разрушаемыми кирпичными стенами. В качестве ведущего программиста реализовал механики боя, физику разрушения структур."
+        "description": "Игра про прогрессию с волнами врагов, прокачкой базы и прогрессией построенной вокруг полностью разрушаемых кирпичных стен. Полная разработка геймплейного цикла."
     },
     {
         "name": "Climb Race",
         "videoLink": "https://www.youtube.com/embed/qpqYZ4Bq6OI?si=MAQEXdOJxlqBLLFM",
-        "description": "Гипер-казуальная гоночная игра на скорость. Разработал ИИ и пользовательский интерфейс, реализовал интеграцию Facebook SDK и AppsFlyer для аналитики. Оптимизировал игру для различных мобильных устройств."
+        "description": "Гипер-казуальная игра на скорость против ботов. Разработал ИИ и пользовательский интерфейс, реализовал интеграцию Facebook SDK и AppsFlyer для аналитики. Оптимизировал игру для различных мобильных устройств, удалось добиться не более 1% вылетов на устройствах."
     },
     {
         "name": "Royal Armies",
         "videoLink": "https://www.youtube.com/embed/7T1jF4TgQtw?si=DeHqyTScCfLxa-__",
-        "description": "Tower defense игра со стратегическим геймплеем. Помимо полной реализации игры, сделал продвинутое поведение юнитов в ближнем бою."
+        "description": "Tower defense casual игра о противостоянии двух армий. Помимо полной реализации игры, сделал продвинутое поведение юнитов в ближнем бою."
     },
     {
         "name": "Clean Master",
         "videoLink": "https://www.youtube.com/embed/hPCO2y-liII?si=eCJ08erUW8hKJEvj",
-        "description": "Casual симулятор уборки. Программировал основные механики сбора мусора, системы таймеров и награды. Оптимизировал производительность для мобильных платформ."
+        "description": "Hyper-Casual симулятор уборки. Программировал все основные механики, полный цикл разработки проекта. Оптимизировал производительность для мобильных платформ."
     },
     {
         "name": "Fly Delivery",
         "videoLink": "https://www.youtube.com/embed/L8kiIHOsKHk?si=MD0DbqLm_Y_11Vh8",
-        "description": "Авиа-логистическая головоломка. Реализовал механики движения и полета."
+        "description": "Раннер казуалка с летающим перосонажем. Реализовал механики движения и полета."
     },
     {
         "name": "Sword Play",
         "videoLink": "https://www.youtube.com/embed/PeG9oAum0ZE?si=HXr7bbp7Bd60VkZl",
-        "description": "Динамичная боевая игра с физикой разрезания объектов. Разработал систему боевых комбо, интегрировал асет Dynamic Mesh Cutter для реалистичной физики отсечения. Провел оптимизацию для высокой частоты кадров."
+        "description": "Рельсовая игры про разрезание врагов. Полный цикл разработки и сборки проекта, интегрировал асет Dynamic Mesh Cutter для реалистичной физики отсечения. Провел оптимизацию для высокой частоты кадров."
     },
     {
         "name": "Dino Merge",
