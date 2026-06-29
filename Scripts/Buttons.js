@@ -49,7 +49,7 @@ const projectsArray = [
     {
         "name": "SpinBound",
         "videoLink": "https://www.youtube.com/embed/lKWPlhaGi8o",
-        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть и сборку проекта. Использовал MVC и ивентную арихитектуру."
+        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть и сборку проекта. Использовал MVC и ивентную арихитектуру. <a href='https://store.steampowered.com/app/4403320/SpinBound/' target='_blank'>Steam</a>"
     },
     {
         "name": "Sand Box The Game",
