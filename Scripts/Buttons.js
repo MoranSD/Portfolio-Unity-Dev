@@ -63,8 +63,8 @@ const projectsArray = [
         "videoLink": "https://www.youtube.com/embed/r4C-Ig_HR24",
         "description": "Кози игра про ферму с прогрессией. Разрабатывалась на заказ.",
         "links": [
-            { "title": "Официальный трейлер", "url": "https://www.youtube.com/watch?v=cwKmUr2dzoU" },
-            { "title": "Google play", "url": "https://play.google.com/store/apps/details?id=com.BrexitMan.HarvestHillFarm" }
+            { "title": "Официальный трейлер", "url": "https://www.youtube.com/watch?v=cwKmUr2dzoU" }
+            // { "title": "Google play", "url": "https://play.google.com/store/apps/details?id=com.BrexitMan.HarvestHillFarm" }
         ]
     },
     {
