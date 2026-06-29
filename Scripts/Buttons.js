@@ -1,3 +1,12 @@
+// ===== ЦВЕТОВЫЕ ПЕРЕМЕННЫЕ ДЛЯ JS =====
+const COLORS = {
+    dark: '#b6452c',
+    darkLight: '#301b28',
+    light: '#eadac3',
+    orange: '#deda1b'
+};
+// ======================================
+
 const aboutMeData = {
     name: "Курсков Леонид",
     profession: "Unity developer",
@@ -45,7 +54,7 @@ const aboutMeData = {
     ]
 };
 
-// Данные проектов (обновлены: добавлено поле links)
+// Данные проектов
 const projectsArray = [
     {
         "name": "SpinBound",
@@ -307,18 +316,18 @@ function initDesktopVersion() {
     const projectButtons = Array.from(document.getElementsByClassName('my_projects-buttons-button'));
 
     if (aboutMeButton) {
-        aboutMeButton.style.borderColor = 'rgba(94, 94, 94, 0.5)';
-        aboutMeButton.style.color = 'rgba(94, 94, 94, 0.5)';
+        aboutMeButton.style.borderColor = COLORS.darkLight;
+        aboutMeButton.style.color = COLORS.darkLight;
     }
 
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
             buttons.forEach(btn => {
-                btn.style.borderColor = 'rgba(94, 94, 94, 1)';
-                btn.style.color = 'rgba(94, 94, 94, 1)';
+                btn.style.borderColor = COLORS.dark;
+                btn.style.color = COLORS.dark;
             });
-            button.style.borderColor = 'rgba(94, 94, 94, 0.5)';
-            button.style.color = 'rgba(94, 94, 94, 0.5)';
+            button.style.borderColor = COLORS.darkLight;
+            button.style.color = COLORS.darkLight;
         });
     });
 
@@ -351,9 +360,7 @@ function initDesktopVersion() {
                 projectName.style.textTransform = 'capitalize';
                 projectDescription.textContent = project.description;
 
-                // ---- ССЫЛКИ (с отступом и оранжевым цветом) ----
                 if (project.links && project.links.length > 0) {
-                    // Добавляем отступ сверху для блока ссылок
                     projectLinks.style.marginTop = '12px';
 
                     project.links.forEach(function (linkObj) {
@@ -361,13 +368,12 @@ function initDesktopVersion() {
                         linkDiv.className = 'project_link_item';
                         linkDiv.innerHTML = `
                             <span class="white_text">• </span>
-                            <a style="color: #de764c; font-weight: bold;" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
+                            <a style="color: ${COLORS.orange}; font-weight: bold;" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
                         `;
                         projectLinks.appendChild(linkDiv);
                     });
                 }
 
-                // Перемещаем ссылки после описания
                 if (projectDescription.nextSibling !== projectLinks) {
                     projectDescription.parentNode.insertBefore(projectLinks, projectDescription.nextSibling);
                 }
@@ -443,8 +449,8 @@ function initMobileVersion() {
             button.style.textTransform = 'uppercase';
             button.style.fontSize = '580%';
             button.textContent = project.name;
-            button.style.color = 'rgba(94, 94, 94, 1)';
-            button.style.border = '1px solid rgba(94, 94, 94, 1)';
+            button.style.color = COLORS.dark;
+            button.style.border = `1px solid ${COLORS.dark}`;
             button.style.borderRadius = '6px';
             button.style.margin = '0 auto';
             button.style.marginTop = '5%';
@@ -496,9 +502,7 @@ function initMobileVersion() {
                         projectDescription.textContent = project.description;
                     }
 
-                    // ---- ССЫЛКИ (с отступом и оранжевым цветом) ----
                     if (projectLinks && project.links && project.links.length > 0) {
-                        // Добавляем отступ сверху для блока ссылок
                         projectLinks.style.marginTop = '12px';
 
                         project.links.forEach(function (linkObj) {
@@ -506,13 +510,12 @@ function initMobileVersion() {
                             linkDiv.className = 'project_link_item';
                             linkDiv.innerHTML = `
                                 <span class="white_text">• </span>
-                                <a style="color: #de764c; font-weight: bold;" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
+                                <a style="color: ${COLORS.orange}; font-weight: bold;" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
                             `;
                             projectLinks.appendChild(linkDiv);
                         });
                     }
 
-                    // Перемещаем ссылки после описания
                     if (projectDescription && projectLinks) {
                         if (projectDescription.nextSibling !== projectLinks) {
                             projectDescription.parentNode.insertBefore(projectLinks, projectDescription.nextSibling);

@@ -1,5 +1,20 @@
+/* ===== ЦВЕТОВЫЕ ПЕРЕМЕННЫЕ ===== */
+:root {
+    --light-bg: #eadac3;          /* светлый фон */
+    --dark-bg: #301b28;           /* тёмный фон */
+    --orange: #deda1b;            /* акцент */
+    --light-text: #eadac3;        /* БЕЛЫЙ текст на тёмном фоне */
+    --dark-text: #b6452c;         /* тёмный текст на светлом фоне */
+    --border-color: #b6452c;      /* цвет границ */
+    --border-light: rgba(142, 228, 175, 0.5);
+    --pdf-btn-bg: #301b28;        /* фон кнопки PDF */
+    --pdf-hover-border: #deda1b;  /* граница при наведении */
+    --download-btn-bg: #deda1b;   /* кнопка загрузки */
+}
+/* ================================== */
+
 html {
-	height: 100%;
+    height: 100%;
     font-size: 0.8vw;
     font-family: Montserrat_medium;
     overflow: hidden;
@@ -12,18 +27,18 @@ html {
 }
 .project_link_item a {
     text-decoration: none;
-    color: #fff;
+    color: var(--light-text);
 }
 .project_link_item a:hover {
     text-decoration: underline;
 }
 body {
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 button {
     outline: none;
@@ -36,23 +51,23 @@ button {
     font-size: 2.3rem;
     font-family: Montserrat_medium;
 
-    border: 0.2vw solid rgba(94, 94, 94, 1);
-    color: rgba(94, 94, 94, 1);
+    border: 0.2vw solid var(--border-color);
+    color: var(--dark-text);
     cursor: pointer;
 }
-.orange_text{
-    color: rgb(222, 118, 76);
+.orange_text {
+    color: var(--orange);
 }
-.white_text{
-    color: rgba(225, 225, 225, 1);
+.white_text {
+    color: var(--light-text);
 }
-.bold_font{
+.bold_font {
     font-family: Montserrat_bold;
 }
-.about_info_spacing{
+.about_info_spacing {
     margin-bottom: 1vw;
 }
-.main_block{
+.main_block {
     width: 70%;
     aspect-ratio: 16/9;
     display: flex;
@@ -62,8 +77,8 @@ button {
 
     display: none;
 }
-.left_block{
-    background-color: rgba(225, 225, 225, 1);
+.left_block {
+    background-color: var(--light-bg);
     flex-grow: 0;
     flex-shrink: 0;
     height: 100%;
@@ -75,8 +90,8 @@ button {
     align-items: center;
     justify-content: center;
 }
-.right_block{
-    background-color: rgba(94, 94, 94, 1);
+.right_block {
+    background-color: var(--dark-bg);
     flex-grow: 0;
     flex-shrink: 0;
     height: 100%;
@@ -88,38 +103,38 @@ button {
     align-items: center;
     justify-content: center;
 }
-.about{
+.about {
     height: 20%;
     width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.about-button{
+.about-button {
     width: 100%;
     height: 40%;
 }
-.about-my_projects{
+.about-my_projects {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
     height: 40%;
 }
-.about-my_projects-title{
+.about-my_projects-title {
     flex-shrink: 0;
     flex-grow: 0.2;
     text-align: center;
     font-size: 1.5rem;
-    color: rgba(94, 94, 94, 1);
+    color: var(--dark-text);
 }
-.about-my_projects-line{
-    background-color: rgba(94, 94, 94, 1);
+.about-my_projects-line {
+    background-color: var(--dark-text);
     flex-shrink: 0;
     flex-grow: 2;
     height: 0.2vw;
 }
-.my_projects{
+.my_projects {
     height: 70%;
     width: 85%;
     display: flex;
@@ -127,30 +142,30 @@ button {
     overflow-x: hidden;
     overflow-y: auto;
 }
-.my_projects::-webkit-scrollbar{
+.my_projects::-webkit-scrollbar {
     width: 1vw;
 }
-.my_projects::-webkit-scrollbar-track{
-    background-color: rgba(94, 94, 94, 1);
+.my_projects::-webkit-scrollbar-track {
+    background-color: var(--dark-bg);
     border-radius: 100vw;
 }
-.my_projects::-webkit-scrollbar-thumb{
-    background: rgba(225, 225, 225, 1);
-    border: 1px solid rgba(94, 94, 94, 1);
+.my_projects::-webkit-scrollbar-thumb {
+    background: var(--light-bg);
+    border: 1px solid var(--dark-bg);
     border-radius: 100vw;
 }
 
-.my_projects-buttons{
+.my_projects-buttons {
     height: 100%;
     width: 100%;
     display: flex;
 }
 
-.my_projects-buttons-button{
+.my_projects-buttons-button {
     width: 95%;
     margin-bottom: 1vw;
 }
-.about_info{
+.about_info {
     height: 90%;
     width: 80%;
     padding-right: 5%;
@@ -160,91 +175,90 @@ button {
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    
 }
-.about_info .active{
+.about_info .active {
     animation: fade-out 1s ease-out reverse both;
 }
-.about_info::-webkit-scrollbar{
+.about_info::-webkit-scrollbar {
     width: 1vw;
 }
-.about_info::-webkit-scrollbar-track{
-    background-color: rgba(225, 225, 225, 1);
+.about_info::-webkit-scrollbar-track {
+    background-color: var(--light-bg);
     border-radius: 100vw;
 }
-.about_info::-webkit-scrollbar-thumb{
-    background: rgba(94, 94, 94, 1);
-    border: 1px solid rgba(225, 225, 225, 1);
+.about_info::-webkit-scrollbar-thumb {
+    background: var(--dark-bg);
+    border: 1px solid var(--light-bg);
     border-radius: 100vw;
 }
-.about_info-main{
+.about_info-main {
     width: 100%;
     height: 9vw;
     display: flex;
     flex-direction: row;
 }
-.about_info-photo{
+.about_info-photo {
     width: 30%;
     aspect-ratio: 1/1;
 }
-.about_info-text_info{
+.about_info-text_info {
     flex-grow: 1;
     padding-left: 5%;
     display: flex;
     flex-direction: column;
 }
-.about_info-main-name{
+.about_info-main-name {
     flex-grow: 1;
     font-size: 2.3rem;
     display: flex;
     align-items: center;
 }
-.about_info-main-profession{
+.about_info-main-profession {
     font-size: 1.5rem;
 }
-.about_info-main-employment{
+.about_info-main-employment {
     flex-grow: 1;
     font-size: 1rem;
     text-align: start;
 }
-.about_info-about_text{
+.about_info-about_text {
     width: 100%;
     font-size: 1.2rem;
 }
-.about_info-links{
+.about_info-links {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-.about_info-link{
+.about_info-link {
     display: flex;
     flex-direction: row;
 }
-.about_info-link_title{
+.about_info-link_title {
     font-size: 1rem;
     margin-right: 0.25vw;
 }
-.about_info-link a{
+.about_info-link a {
     text-decoration: none;
     font-size: 1rem;
 }
-.work_expierence-title{
+.work_expierence-title {
     font-size: 1.2rem;
 }
-.skills-title{
+.skills-title {
     font-size: 1.2rem;
 }
-.work_expierence-studios{
+.work_expierence-studios {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
-.skills-concrete{
+.skills-concrete {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
-.project_info{
+.project_info {
     height: 90%;
     width: 80%;
     display: flex;
@@ -253,55 +267,55 @@ button {
     justify-content: start;
     display: none;
 }
-.project_info .active{
+.project_info .active {
     animation: fade-out 1s ease-out reverse both;
 }
-.project_info .active{
+.project_info .active {
     animation: light-up 1s ease-out both;
 }
-.project_info-video_block{
+.project_info-video_block {
     width: 100%;
     aspect-ratio: 16/9;
-    background-color: rgba(94, 94, 94, 1);
+    background-color: var(--dark-bg);
 }
-.project_info-name{
+.project_info-name {
     font-size: 1.5rem;
 }
-.project_info-links{
+.project_info-links {
     font-size: 1rem;
     align-self: flex-start;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.project_info-description{
+.project_info-description {
     font-size: 1rem;
     align-self: flex-start;
 }
 
-#projectVideo{
+#projectVideo {
     border: none;
     padding: 0;
     outline: none;
 }
 
-#mobileBlock{
+#mobileBlock {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh; /* высота блока */
+    height: 100vh;
     width: 100vw;
 }
-#navBar{
+#navBar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 40px;
     font-size: 300%;
-    background-color: rgba(225, 225, 225, 1);
-    color: #5E5E5E;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
 }
-#navBarTitle{
+#navBarTitle {
     margin-left: 5%;
 }
 
@@ -319,7 +333,7 @@ button {
     display: block;
     width: 40px;
     height: 5px;
-    background-color: rgba(94, 94, 94, 1);
+    background-color: var(--dark-text);
     position: absolute;
     left: 0;
     transition: .3s all linear;
@@ -351,28 +365,28 @@ button {
 .burger_active .burger__line_third {
     transform: translateY(-50%) rotate(-45deg);
 }
-  
-#aboutMePage{
-    background-color: rgba(94, 94, 94, 1);
+
+#aboutMePage {
+    background-color: var(--dark-bg);
     overflow: auto;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
 }
-#aboutMeMobile{
+#aboutMeMobile {
     margin-top: 5%;
     margin-bottom: 15%;
 }
 
-#aboutMeMobilePhoto{
+#aboutMeMobilePhoto {
     width: 40%;
 }
-#aboutMeMobileTitle{
+#aboutMeMobileTitle {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-#aboutMeMobileTitleText{
+#aboutMeMobileTitleText {
     display: flex;
     flex-direction: column;
     margin-left: 2%;
@@ -380,60 +394,60 @@ button {
     font-size: 400%;
     margin-top: 10%;
 }
-#aboutMeMobileName{
+#aboutMeMobileName {
     flex-grow: 0.3;
     font-size: 180%;
     margin-top: -5%;
 }
-#aboutMeMobileProfession{
+#aboutMeMobileProfession {
     font-size: 120%;
 }
-#aboutMeMobileEmployment{
+#aboutMeMobileEmployment {
     flex-grow: 1;
     font-size: 110%;
     text-align: start;
 }
-#aboutMeMobileDesciption{
+#aboutMeMobileDesciption {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-left: 5%;
     margin-top: 5%;
     justify-content: center;
-    color: rgba(225, 225, 225, 1);
+    color: var(--light-text);
     font-size: 600%;
 }
-#aboutMeMobileDesciptionLinks a{
+#aboutMeMobileDesciptionLinks a {
     font-size: 70%;
     margin-top: 1%;
     margin-left: 1%;
 }
-.aboutMeMobileDesciptionLinksText{
+.aboutMeMobileDesciptionLinksText {
     font-size: 100%;
 }
 
-#workExpirience{
+#workExpirience {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-#workExpirienceTitle{
+#workExpirienceTitle {
     font-size: 150%;
 }
 
-.infoSkillsTitle{
+.infoSkillsTitle {
     font-size: 150%;
 }
 
-#projectsPage{
+#projectsPage {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(225, 225, 225, 1);
+    background-color: var(--light-bg);
 }
-#myProjects{
+#myProjects {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -441,22 +455,22 @@ button {
     margin-top: 5%;
     position: fixed;
 }
-#projectsTitle{
-    color: rgba(94, 94, 94, 1);
+#projectsTitle {
+    color: var(--dark-text);
     padding-left: 1%;
     padding-right: 1%;
     font-size: 150%;
     white-space: nowrap;
 }
-.projectsLine{
-    background-color: rgba(94, 94, 94, 1);
+.projectsLine {
+    background-color: var(--dark-text);
     flex-shrink: 0;
     flex-grow: 2;
     height: 0.23vh;
     width: 40vw;
     margin-top: 2%;
 }
-#projectsButtons{
+#projectsButtons {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -465,50 +479,50 @@ button {
     margin-top: 4%;
 }
 
-.scrollableBlock{
+.scrollableBlock {
     overflow: auto;
     height: 60%;
     width: 100%;
     overflow-x: hidden;
     margin-top: 15%;
 }
-#projectInfoScrollableBlock{
+#projectInfoScrollableBlock {
     overflow: auto;
     width: 100%;
     overflow-x: hidden;
     margin-top: 5%;
 }
-#projectInfoScrollableBlock::-webkit-scrollbar{
+#projectInfoScrollableBlock::-webkit-scrollbar {
     width: 1vw;
 }
-#projectInfoScrollableBlock::-webkit-scrollbar-track{
-    background-color: rgba(225, 225, 225, 1);
+#projectInfoScrollableBlock::-webkit-scrollbar-track {
+    background-color: var(--light-bg);
     border-radius: 100vw;
 }
-#projectInfoScrollableBlock::-webkit-scrollbar-thumb{
-    background: rgba(94, 94, 94, 1);
-    border: 1px solid rgba(225, 225, 225, 1);
+#projectInfoScrollableBlock::-webkit-scrollbar-thumb {
+    background: var(--dark-bg);
+    border: 1px solid var(--light-bg);
     border-radius: 100vw;
 }
 
-#projectInfoBlock{
+#projectInfoBlock {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
     height: 100%;
-    background-color: rgba(94, 94, 94, 1);
+    background-color: var(--dark-bg);
     display: none;
 }
 
-#projectInfo{
+#projectInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 95%;
 }
 
-#mobileProjectVideo{
+#mobileProjectVideo {
     width: 100%;
     aspect-ratio: 16/9;
     background-color: cadetblue;
@@ -517,12 +531,12 @@ button {
     padding: 0;
     outline: none;
 }
-#projectInfoTitle{
+#projectInfoTitle {
     font-size: 550%;
     margin-top: 5%;
     margin-left: 5%;
 }
-#projectInfoLinks{
+#projectInfoLinks {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -530,31 +544,30 @@ button {
     margin-top: 5%;
     margin-left: 5%;
 }
-#projectInfoDescription{
+#projectInfoDescription {
     font-size: 400%;
     margin-top: 5%;
     margin-left: 5%;
 }
 
-#selectMenu{
+#selectMenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(225, 225, 225, 1);
+    background-color: var(--light-bg);
     display: none;
 }
-.selectButtons{
+.selectButtons {
     border: none;
-    color: rgba(94, 94, 94, 1);
+    color: var(--dark-text);
     font-size: 800%;
     margin-top: 5%;
 }
-#selectMenuAboutMeButton
-{
+#selectMenuAboutMeButton {
     width: 80%;
-    border: 1px solid rgba(94, 94, 94, 1);
+    border: 1px solid var(--dark-text);
     border-radius: 6px;
     margin: 0 auto;
     font-size: 600%;
@@ -562,20 +575,20 @@ button {
     user-select: none;
 }
 
-.scrollableBlock::-webkit-scrollbar{
+.scrollableBlock::-webkit-scrollbar {
     width: 1vw;
 }
-.scrollableBlock::-webkit-scrollbar-track{
-    background-color: rgba(225, 225, 225, 1);
+.scrollableBlock::-webkit-scrollbar-track {
+    background-color: var(--light-bg);
     border-radius: 100vw;
 }
-.scrollableBlock::-webkit-scrollbar-thumb{
-    background: rgba(94, 94, 94, 1);
-    border: 1px solid rgba(225, 225, 225, 1);
+.scrollableBlock::-webkit-scrollbar-thumb {
+    background: var(--dark-bg);
+    border: 1px solid var(--light-bg);
     border-radius: 100vw;
 }
 
-#mobileProjectsButtons{
+#mobileProjectsButtons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -584,108 +597,105 @@ button {
 
 @keyframes fade-out {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      opacity: 0;
+        opacity: 0;
     }
 }
 @keyframes light-up {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      opacity: 0;
+        opacity: 0;
     }
 }
 
 @media screen and (min-width: 992px) {
-    #desktop{
+    #desktop {
         display: flex;
     }
-    #mobileBlock{
+    #mobileBlock {
         display: none;
     }
 }
 @media screen and (max-width: 767px) {
-    #mobileBlock{
+    #mobileBlock {
         display: flex;
     }
-    #desktop{
+    #desktop {
         display: none;
     }
 }
 .download-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  background: #ff6b35;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: var(--download-btn-bg);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 /* PDF Download Buttons - Right Bottom Corner */
 .pdf-buttons-container {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  gap: 10px;
-  z-index: 100;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
 }
 
 .pdf-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  color: rgba(225, 225, 225, 1); /* .whitetext */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(94, 94, 94, 0.8); /* .rightblock border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--light-text);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--border-color);
 }
 
 .pdf-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 20px rgba(94, 94, 94, 0.5);
-  border-color: rgba(222, 118, 76, 1); /* .orangetext */
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(94, 94, 94, 0.5);
+    border-color: var(--pdf-hover-border);
 }
 
 .pdf-eng {
-  background: rgba(94, 94, 94, 0.95); /* .rightblock фон */
+    background: var(--pdf-btn-bg);
 }
 
 .pdf-ru {
-  background: rgba(94, 94, 94, 0.95); /* Тот же цвет для монотонности */
+    background: var(--pdf-btn-bg);
 }
 
 .pdf-btn:active {
-  transform: translateY(0) scale(0.98);
+    transform: translateY(0) scale(0.98);
 }
 
-/* Текст внутри кнопок */
 .pdf-btn span {
-  font-size: 12px;
+    font-size: 12px;
 }
 
-/* Mobile responsive */
 @media (max-width: 768px) {
-  .pdf-buttons-container {
-    bottom: 15px;
-    right: 15px;
-  }
-  
-  .pdf-btn {
-    width: 45px;
-    height: 45px;
-    font-size: 12px;
-  }
+    .pdf-buttons-container {
+        bottom: 15px;
+        right: 15px;
+    }
+    .pdf-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 12px;
+    }
 }

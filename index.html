@@ -7,14 +7,20 @@
     <title>Leonid Kurskov portfolio Unity developer</title>
     <style>
         @font-face {
-         font-family: Montserrat_medium;
-         src: url(Fonts/Montserrat/Montserrat-Medium.ttf);
+            font-family: Montserrat_medium;
+            src: url(Fonts/Montserrat/Montserrat-Medium.ttf);
         }
         @font-face {
-         font-family: Montserrat_bold;
-         src: url(Fonts/Montserrat/Montserrat-SemiBold.ttf);
+            font-family: Montserrat_bold;
+            src: url(Fonts/Montserrat/Montserrat-SemiBold.ttf);
         }
-       </style>
+        /* фон теперь использует CSS-переменные */
+        body {
+            background: linear-gradient(to right, var(--light-bg) 50%, var(--dark-bg) 50%);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
     <div class="main_block" id="desktop">
