@@ -503,7 +503,7 @@ function initMobileVersion() {
                             linkDiv.className = 'project_link_item';
                             linkDiv.innerHTML = `
                                 <span class="white_text">• </span>
-                                <a style="color: #FF8C00; text-decoration: none;" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
+                                <a style="color: #de764c; text-decoration: none;" href="${linkObj.url}" target="_blank">${linkObj.title}</a>
                             `;
                             projectLinks.appendChild(linkDiv);
                         });
