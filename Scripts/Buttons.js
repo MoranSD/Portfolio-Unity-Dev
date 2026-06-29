@@ -42,63 +42,77 @@ const aboutMeData = {
     ]
 };
 
-// Данные проектов
+// Данные проектов (обновлены: добавлено поле links)
 const projectsArray = [
     {
         "name": "SpinBound",
         "videoLink": "https://www.youtube.com/embed/lKWPlhaGi8o",
-        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть и сборку проекта. Успешно реализовал сложную ивент-ориентированную архитектуру с MVC‑паттерном для UI и контролем игрового потока, это позволило гибко управлять десятками сущностей без потери производительности. Steam - https://store.steampowered.com/app/4403320/SpinBound/"
+        "description": "Roguelike deckbuilder игра основанная на слот машине. Отвечал полностью за техническую часть и сборку проекта. Успешно реализовал сложную ивент-ориентированную архитектуру с MVC‑паттерном для UI и контролем игрового потока, это позволило гибко управлять десятками сущностей без потери производительности.",
+        "links": [
+            { "title": "Steam", "url": "https://store.steampowered.com/app/4403320/SpinBound/" }
+        ]
     },
     {
         "name": "Sand Box The Game",
         "videoLink": "https://www.youtube.com/embed/juzhNcXmiNM?si=PCUfIvWyGa7RuhxY",
-        "description": "Коммерческий проект. Исполнял роль тим лида. Разработал систему миссий, механику строительства и прогрессии игрока, интегрировав их с существующим готовым ассетом. Реализовал полный цикл геймплея от создания контента до оптимизации."
+        "description": "Коммерческий проект. Исполнял роль тим лида. Разработал систему миссий, механику строительства и прогрессии игрока, интегрировав их с существующим готовым ассетом. Реализовал полный цикл геймплея от создания контента до оптимизации.",
+        "links": []
     },
     {
         "name": "Harvest Hill Farm",
         "videoLink": "https://www.youtube.com/embed/r4C-Ig_HR24",
-        "description": "Кози игра про ферму с прогрессией. Официальный трейлер - https://www.youtube.com/watch?v=cwKmUr2dzoU Google play - https://play.google.com/store/apps/details?id=com.BrexitMan.HarvestHillFarm"
+        "description": "Кози игра про ферму с прогрессией. Разрабатывалась на заказ.",
+        "links": [
+            { "title": "Официальный трейлер", "url": "https://www.youtube.com/watch?v=cwKmUr2dzoU" },
+            { "title": "Google play", "url": "https://play.google.com/store/apps/details?id=com.BrexitMan.HarvestHillFarm" }
+        ]
     },
     {
         "name": "Brick Battles",
         "videoLink": "https://www.youtube.com/embed/2LQpmJtqwgI?si=yUk-RJktjstb0QAP",
-        "description": "Игра про прогрессию с волнами врагов, прокачкой базы и прогрессией построенной вокруг полностью разрушаемых кирпичных стен. Полная разработка геймплейного цикла."
+        "description": "Игра про прогрессию с волнами врагов, прокачкой базы и прогрессией построенной вокруг полностью разрушаемых кирпичных стен. Полная разработка геймплейного цикла.",
+        "links": []
     },
     {
         "name": "Climb Race",
         "videoLink": "https://www.youtube.com/embed/qpqYZ4Bq6OI?si=MAQEXdOJxlqBLLFM",
-        "description": "Гипер-казуальная игра на скорость против ботов. Разработал ИИ и пользовательский интерфейс, реализовал интеграцию Facebook SDK и AppsFlyer для аналитики. Оптимизировал игру для различных мобильных устройств, удалось добиться не более 1% вылетов на устройствах."
+        "description": "Гипер-казуальная игра на скорость против ботов. Разработал ИИ и пользовательский интерфейс, реализовал интеграцию Facebook SDK и AppsFlyer для аналитики. Оптимизировал игру для различных мобильных устройств, удалось добиться не более 1% вылетов на устройствах.",
+        "links": []
     },
     {
         "name": "Royal Armies",
         "videoLink": "https://www.youtube.com/embed/7T1jF4TgQtw?si=DeHqyTScCfLxa-__",
-        "description": "Tower defense casual игра о противостоянии двух армий. Помимо полной реализации игры, сделал продвинутое поведение юнитов в ближнем бою."
+        "description": "Tower defense casual игра о противостоянии двух армий. Помимо полной реализации игры, сделал продвинутое поведение юнитов в ближнем бою.",
+        "links": []
     },
     {
         "name": "Clean Master",
         "videoLink": "https://www.youtube.com/embed/hPCO2y-liII?si=eCJ08erUW8hKJEvj",
-        "description": "Hyper-Casual симулятор уборки. Программировал все основные механики, полный цикл разработки проекта. Оптимизировал производительность для мобильных платформ."
+        "description": "Hyper-Casual симулятор уборки. Программировал все основные механики, полный цикл разработки проекта. Оптимизировал производительность для мобильных платформ.",
+        "links": []
     },
     {
         "name": "Fly Delivery",
         "videoLink": "https://www.youtube.com/embed/L8kiIHOsKHk?si=MD0DbqLm_Y_11Vh8",
-        "description": "Раннер казуалка с летающим перосонажем. Реализовал механики движения и полета."
+        "description": "Раннер казуалка с летающим перосонажем. Реализовал механики движения и полета.",
+        "links": []
     },
     {
         "name": "Sword Play",
         "videoLink": "https://www.youtube.com/embed/PeG9oAum0ZE?si=HXr7bbp7Bd60VkZl",
-        "description": "Рельсовая игры про разрезание врагов. Полный цикл разработки и сборки проекта, интегрировал асет Dynamic Mesh Cutter для реалистичной физики отсечения. Провел оптимизацию для высокой частоты кадров."
+        "description": "Рельсовая игры про разрезание врагов. Полный цикл разработки и сборки проекта, интегрировал асет Dynamic Mesh Cutter для реалистичной физики отсечения. Провел оптимизацию для высокой частоты кадров.",
+        "links": []
     },
     {
         "name": "Dino Merge",
         "videoLink": "https://www.youtube.com/embed/HPVIqW95MAk?si=5jqIMN8n_ru9W283",
-        "description": "Эволюционная головоломка с мерджем динозавров. Программировал механику слияния существ, систему прогрессии и боевой арены."
+        "description": "Эволюционная головоломка с мерджем динозавров. Программировал механику слияния существ, систему прогрессии и боевой арены.",
+        "links": []
     }
 ];
 
 // Функция для заполнения данных "Обо мне" в десктопной версии
 function fillAboutMeDesktop() {
-    // Заполняем основную информацию
     const nameEl = document.querySelector('.about_info-main-name');
     const professionEl = document.querySelector('.about_info-main-profession');
     const employmentEl = document.querySelector('.about_info-main-employment');
@@ -111,7 +125,6 @@ function fillAboutMeDesktop() {
     if (photoEl) photoEl.src = aboutMeData.photoSrc;
     if (descriptionEl) descriptionEl.innerHTML = aboutMeData.description;
     
-    // Заполняем ссылки
     const linksContainer = document.querySelector('.about_info-links');
     if (linksContainer) {
         linksContainer.innerHTML = '';
@@ -126,7 +139,6 @@ function fillAboutMeDesktop() {
         });
     }
     
-    // Заполняем опыт работы с оранжевым цветом для названий компаний
     const experienceContainer = document.querySelector('.work_expierence-studios');
     if (experienceContainer) {
         experienceContainer.innerHTML = '';
@@ -144,9 +156,7 @@ function fillAboutMeDesktop() {
         });
     }
     
-    // Заполняем ключевые навыки в десктопной версии
     const skillsContainersDesktop = document.querySelectorAll('.about_info .about_info-skills');
-    
     if (skillsContainersDesktop.length >= 1) {
         const keySkillsList = skillsContainersDesktop[0].querySelector('.skills-concrete');
         if (keySkillsList) {
@@ -158,7 +168,6 @@ function fillAboutMeDesktop() {
             });
         }
     }
-    
     if (skillsContainersDesktop.length >= 2) {
         const additionalSkillsList = skillsContainersDesktop[1].querySelector('.skills-concrete');
         if (additionalSkillsList) {
@@ -174,7 +183,6 @@ function fillAboutMeDesktop() {
 
 // Функция для заполнения данных "Обо мне" в мобильной версии
 function fillAboutMeMobile() {
-    // Заполняем основную информацию
     const nameEl = document.getElementById('aboutMeMobileName');
     const professionEl = document.getElementById('aboutMeMobileProfession');
     const employmentEl = document.getElementById('aboutMeMobileEmployment');
@@ -185,13 +193,11 @@ function fillAboutMeMobile() {
     if (employmentEl) employmentEl.textContent = aboutMeData.employment;
     if (photoEl) photoEl.src = aboutMeData.photoSrc;
     
-    // Заполняем описание
     const descriptionDiv = document.querySelector('#aboutMeMobileDesciption > div:first-child');
     if (descriptionDiv) {
         descriptionDiv.innerHTML = aboutMeData.description;
     }
     
-    // Заполняем ссылки
     const linksContainer = document.getElementById('aboutMeMobileDesciptionLinks');
     if (linksContainer) {
         linksContainer.innerHTML = '';
@@ -206,7 +212,6 @@ function fillAboutMeMobile() {
         });
     }
     
-    // Заполняем опыт работы с оранжевым цветом для названий компаний
     const experienceContainer = document.querySelector('#workExpirience .work_expierence-studios');
     if (experienceContainer) {
         experienceContainer.innerHTML = '';
@@ -224,9 +229,7 @@ function fillAboutMeMobile() {
         });
     }
     
-    // Заполняем ключевые навыки в мобильной версии
     const skillsContainersMobile = document.querySelectorAll('#aboutMeMobileDesciption .about_info-skills');
-    
     if (skillsContainersMobile.length >= 1) {
         const keySkillsList = skillsContainersMobile[0].querySelector('.skills-concrete');
         if (keySkillsList) {
@@ -238,7 +241,6 @@ function fillAboutMeMobile() {
             });
         }
     }
-    
     if (skillsContainersMobile.length >= 2) {
         const additionalSkillsList = skillsContainersMobile[1].querySelector('.skills-concrete');
         if (additionalSkillsList) {
@@ -255,12 +257,9 @@ function fillAboutMeMobile() {
 // Основной код, который выполняется при загрузке
 document.addEventListener('DOMContentLoaded', function() {
     console.log("DOM загружен");
-    
-    // Сначала заполняем данные для обеих версий
     fillAboutMeDesktop();
     fillAboutMeMobile();
     
-    // Проверяем, какая версия отображается
     const mobileBlock = document.getElementById('mobileBlock');
     const desktopBlock = document.getElementById('desktop');
     
@@ -286,7 +285,6 @@ function initDesktopVersion() {
     const projectLinks = document.getElementById('projectLinks');
     const projectsButtons = document.getElementById('projectsButtons');
 
-    // Создаем кнопки проектов
     function createProjectsButtons(){
         projectsArray.forEach(function (project){
             const button = document.createElement('button');
@@ -301,8 +299,8 @@ function initDesktopVersion() {
             projectsButtons.appendChild(button);
         });
     }
-    
     createProjectsButtons();
+    
     const buttons = document.querySelectorAll('button');
     const projectButtons = Array.from(document.getElementsByClassName('my_projects-buttons-button'));
 
@@ -351,13 +349,16 @@ function initDesktopVersion() {
                 projectName.style.textTransform = 'capitalize';
                 projectDescription.textContent = project.description;
 
+                // Отображаем ссылки (если есть)
                 if (project.links && project.links.length > 0) {
-                    project.links.forEach(function (link){
-                        const a = document.createElement('a');
-                        a.href = link;
-                        a.textContent = link;
-                        a.style.textDecoration = 'none';
-                        projectLinks.appendChild(a);
+                    project.links.forEach(function (linkObj) {
+                        const linkDiv = document.createElement('div');
+                        linkDiv.className = 'project_link_item';
+                        linkDiv.innerHTML = `
+                            <span class="orange_text">${linkObj.title} – </span>
+                            <a class="white_text" href="${linkObj.url}" target="_blank">${linkObj.url}</a>
+                        `;
+                        projectLinks.appendChild(linkDiv);
                     });
                 }
             }
@@ -391,17 +392,11 @@ function initMobileVersion() {
 
     const aboutMeButton = document.getElementById('selectMenuAboutMeButton');
     
-    // Устанавливаем начальное состояние
     if (navBarTitle) navBarTitle.textContent = 'Обо мне';
-    
-    // Скрываем меню выбора при загрузке
     if (selectMenu) selectMenu.style.display = 'none';
-    
-    // Показываем страницу "Обо мне"
     if (aboutMePage) aboutMePage.style.display = 'flex';
     if (projectInfo) projectInfo.style.display = 'none';
     
-    // Добавляем обработчики только если элементы существуют
     if (aboutMeButton) {
         aboutMeButton.addEventListener('click', () => {
             if (currentPage) currentPage.style.display = 'none';
@@ -414,9 +409,7 @@ function initMobileVersion() {
     }
 
     if (burgerButton) {
-        console.log("Burger button найден");
         burgerButton.addEventListener('click', () => {
-            console.log("Burger button clicked");
             if (selectMenu.style.display === 'none' || selectMenu.style.display === '') {
                 if (currentPage) currentPage.style.display = 'none';
                 if (selectMenu) selectMenu.style.display = 'flex';
@@ -430,8 +423,6 @@ function initMobileVersion() {
                 createProjectsButtons();
             }
         });
-    } else {
-        console.log("Burger button не найден!");
     }
 
     function createProjectsButtons(){
@@ -494,13 +485,16 @@ function initMobileVersion() {
                     
                     if (projectDescription) projectDescription.textContent = project.description;
 
+                    // Отображаем ссылки (если есть)
                     if (projectLinks && project.links && project.links.length > 0) {
-                        project.links.forEach(function (link){
-                            const a = document.createElement('a');
-                            a.href = link;
-                            a.textContent = link;
-                            a.style.textDecoration = 'none';
-                            projectLinks.appendChild(a);
+                        project.links.forEach(function (linkObj) {
+                            const linkDiv = document.createElement('div');
+                            linkDiv.className = 'project_link_item';
+                            linkDiv.innerHTML = `
+                                <span class="orange_text">${linkObj.title} – </span>
+                                <a class="white_text" href="${linkObj.url}" target="_blank">${linkObj.url}</a>
+                            `;
+                            projectLinks.appendChild(linkDiv);
                         });
                     }
                 }
