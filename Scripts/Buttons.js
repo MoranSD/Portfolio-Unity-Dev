@@ -14,7 +14,8 @@ const aboutMeData = {
         { title: "Телеграмм", url: "https://t.me/msdGameDev" },
         { title: "Блог", url: "https://t.me/msdBlog" },
         { title: "Почта", url: "mailto:leonidkurskov@gmail.com" },
-        { title: "GitHub", url: "https://github.com/MoranSD" }
+        { title: "GitHub", url: "https://github.com/MoranSD" },
+        { title: "linkedin", url: "https://www.linkedin.com/in/leonid-kurskov-2a0b86254/" }
     ],
     workExperience: [
         {
